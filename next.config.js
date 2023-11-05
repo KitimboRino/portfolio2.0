@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    images: {
+      domains: ['cdn.builder.io'], // Add the hostname here
+    },
+  }
+  
+  module.exports = nextConfig
+  
