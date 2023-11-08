@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <main className="justify-end items-center bg-[radial-gradient(70.71%_70.71%_at_50%_50%,rgba(0,0,0,0.19)_57.08%,rgba(0,0,0,0.28)_100%)] self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 max-md:max-w-full max-md:pt-24 max-md:px-5">
-      <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5">
+    <main className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
+      <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5" >
         <div className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
           <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-2 pb-8 px-8 rounded-xl border-solid max-md:px-5">
             <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl"> + </h1>
@@ -29,7 +29,7 @@ function HeroSection() {
               </div>
             </div>
           </a>
-          <a href="..." className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[124px] max-w-full flex-col my-auto rounded-xl">
+          <a href="..." className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[135px] max-w-full flex-col my-auto rounded-xl">
             <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-3 pr-3 py-2 rounded-xl border-solid">
               <Image
                 loading="lazy"

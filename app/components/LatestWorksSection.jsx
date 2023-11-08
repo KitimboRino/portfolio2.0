@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 function LatestWorksSection() {
   return (
@@ -12,13 +13,19 @@ function LatestWorksSection() {
           <div className="flex flex-col items-stretch w-[33%] max-md:w-full max-md:ml-0">
             <div className="justify-end items-start flex grow flex-col flex-1 rounded-md max-md:mt-2.5">
               <div className="flex-col overflow-hidden self-stretch relative flex aspect-[1.1168478260869565] grow w-full">
-                <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ea1cc81e-1c63-4174-9231-c081b4b77df5?apiKey=f742a22b09984b259f2749b8e77545e3&" className="absolute z-[-1] h-full w-full object-cover object-center inset-0" alt="Project Image" />
-                <div className="relative bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_86.25%,rgba(0,0,0,0.77)_100%)] self-stretch flex w-full grow flex-col pl-3 pr-5 pt-80 pb-3">
+                <header className="bg-gradient-to-r from-transparent via-transparent to-black self-stretch relative flex w-full flex-col pl-3 pr-20 pt-80 pb-3 max-md:pr-5 max-md:pt-24">
                   <div className="justify-center items-center flex w-[91px] max-w-full flex-col self-start">
-                    <div className="text-neutral-50 text-base leading-[110%] self-start">Guild Digital</div>
-                    <div className="text-neutral-400 text-sm leading-[110%] self-start">Website</div>
+                    <h1 className="text-neutral-50 text-base leading-[110%] self-stretch">Guild Digital</h1>
+                    <p className="text-neutral-400 text-sm leading-[110%] self-stretch">Website</p>
                   </div>
-                </div>
+                  <Image
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d83f451-9002-4f37-ac15-207748a69420?apiKey=f742a22b09984b259f2749b8e77545e3"
+                    alt="Description of the image"
+                    width={200}
+                    height={200}
+                    // layout="responsive"
+                  />
+                </header>
               </div>
             </div>
           </div>
