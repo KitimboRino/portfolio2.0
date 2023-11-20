@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsSearch } from "react-icons/bs";
 
 function Header() {
   return (
@@ -14,9 +15,7 @@ function Header() {
           >
             <div className="items-start self-stretch flex w-[913px] max-w-full grow shrink-0 basis-auto justify-between gap-5 max-md:flex-wrap">
               <div className="max-w-full justify-center items-center bg-zinc-400 bg-opacity-10 self-stretch flex w-[66px] flex-col px-5 py-1 rounded-xl">
-                <a href="#">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f94dc5d-778c-40af-8e10-4992c04f154a?apiKey=f742a22b09984b259f2749b8e77545e3&" className="aspect-square object-cover object-center w-full overflow-hidden self-stretch grow max-md:mx-px" alt="Profile Picture" />
-                </a>
+                <BsSearch className="text-white" />
               </div>
             </div>
             <div className="justify-center items-start self-center flex grow shrink-0 basis-auto gap-2.5 my-auto">

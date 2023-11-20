@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import { IoMailOutline } from "react-icons/io5";
 
 
 function HeroSection() {
@@ -7,21 +8,23 @@ function HeroSection() {
     <main className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/flowe.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5" >
         <div className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
-          <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-2 pb-8 px-8 rounded-xl border-solid max-md:px-5">
-            <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl"> + </h1>
-            <p className="text-neutral-50 text-sm font-light leading-[140%] self-stretch"> Start project </p>
-          </div>
+          <a href="" >
+            <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-2 pb-8 px-8 rounded-xl border-solid max-md:px-5">
+              <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl"> + </h1>
+              <p className="text-neutral-50 text-sm font-light leading-[140%] self-stretch"> Start project </p>
+            </div>
+          </a>
         </div>
         <div className="self-stretch flex w-full items-start justify-between gap-5 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
-          <a href="..." className="justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
+          <a href="tel:+123456789" className="justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
             <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-3 pl-3 pr-4 py-2 rounded-xl border-solid">
               <Image
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d83f451-9002-4f37-ac15-207748a69420?apiKey=f742a22b09984b259f2749b8e77545e3"
+                src="/images/Rino.jpeg"
+                className="rounded-full object-cover"
                 alt="Book a call"
-                className="aspect-square object-contain object-center w-[38px] overflow-hidden self-stretch max-w-full"
-                width={10}
-                height={10}
+                width={38}
+                height={38}
               />
               <div className="items-start self-center flex flex-col my-auto">
                 <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch"> Book a call{" "} </p>
@@ -29,16 +32,9 @@ function HeroSection() {
               </div>
             </div>
           </a>
-          <a href="..." className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[135px] max-w-full flex-col my-auto rounded-xl">
+          <a href="mailto:your.email@example.com" className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[135px] max-w-full flex-col my-auto rounded-xl">
             <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-3 pr-3 py-2 rounded-xl border-solid">
-              <Image
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/d2a1f373-7c97-4a5f-9217-9032b35c8578?apiKey=f742a22b09984b259f2749b8e77545e3&"
-                alt="Drop e-mail"
-                className="aspect-square object-contain object-center w-[18px] justify-center items-center overflow-hidden self-stretch max-w-full"
-                width={10}
-                height={10}
-              />
+              <IoMailOutline className="aspect-square text-neutral-50 object-contain object-center w-[18px] justify-center items-center overflow-hidden self-stretch max-w-full" />
               <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch"> Drop e-mail </p>
             </div>
           </a>
