@@ -19,7 +19,7 @@ function HeroSection() {
             </a>
           </div>
           <div className="self-stretch flex w-full items-start justify-between gap-5 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
-            <a href="tel:+123456789" className="justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
+            <a href="tel:+256706144964" className="justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
               <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-3 pl-3 pr-4 py-2 rounded-xl border-solid">
                 <Image
                   loading="lazy"
@@ -35,7 +35,7 @@ function HeroSection() {
                 </div>
               </div>
             </a>
-            <a href="mailto:your.email@example.com" className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[135px] max-w-full flex-col my-auto rounded-xl">
+            <a href="mailto:your.kitimborinoemma0580@gmail.com" className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[135px] max-w-full flex-col my-auto rounded-xl">
               <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-3 pr-3 py-2 rounded-xl border-solid">
                 <IoMailOutline className="aspect-square text-neutral-50 object-contain object-center w-[18px] justify-center items-center overflow-hidden self-stretch max-w-full" />
                 <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch"> Drop e-mail </p>
