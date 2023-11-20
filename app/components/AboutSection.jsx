@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutSection() {
   return (
-    <section className="max-w-[87.5rem] items-center bg-neutral-900 self-stretch flex grow flex-col mt-4 rounded-3xl max-md:max-w-full">
+    <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch  bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
       <div className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch flex grow flex-col px-5 py-20 rounded-3xl border-solid max-md:max-w-full">
         <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
           <div className="max-w-[81rem] items-start self-stretch flex flex-col max-md:max-w-full">
