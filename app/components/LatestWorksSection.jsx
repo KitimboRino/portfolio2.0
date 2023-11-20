@@ -19,7 +19,7 @@ function LatestWorksSection() {
                     <p className="text-neutral-400 text-sm leading-[110%] self-stretch">Website</p>
                   </div>
                   <Image
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d83f451-9002-4f37-ac15-207748a69420?apiKey=f742a22b09984b259f2749b8e77545e3"
+                    src="/public/images/GesturesSite.png"
                     alt="Description of the image"
                     width={200}
                     height={200}
