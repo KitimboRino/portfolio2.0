@@ -8,7 +8,6 @@ function HeroSection() {
     <main className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch  rounded-3xl border-solid">
 
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/flowe.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-
         <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5" >
           <div className="justify-center items-center bg-zinc-50 bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
             <a href="" >
@@ -43,13 +42,12 @@ function HeroSection() {
             </a>
           </div>
         </section>
-        <section className="max-w-[1081px] justify-end items-start self-center flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
+        <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
           <h2 className="text-neutral-50 text-5xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full"> Front End Dev Designing/ developing UIs for web, mobile, applications and interactive apps </h2>
           <p className="text-neutral-50 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full"> Personal website where you can find a <br /> lot about me and what I do </p>
         </section>
       </div>
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pb-8 rounded-b-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
-
         <section className="max-w-[1252px] items-start self-center flex w-full flex-col mt-16 max-md:max-w-full max-md:mt-10">
           <div className="items-start flex w-[330px] max-w-full flex-col self-start">
             <h2 className="text-neutral-50 text-lg font-light leading-[120%] self-stretch">
