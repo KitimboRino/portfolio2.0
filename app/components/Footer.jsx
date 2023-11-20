@@ -37,11 +37,8 @@ function Footer() {
                                     />
                                 </button>
                                 <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                                    <p className="text-neutral-50 text-right text-sm font-light leading-[200%] self-stretch">
-                                        Framer Template
-                                    </p>
                                     <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                                        Madiyour | Personal Website | Framer
+                                        Gestures-ug | Company Website | WordPress
                                     </p>
                                 </div>
                             </div>
@@ -55,14 +52,16 @@ function Footer() {
                                         loading="lazy"
                                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/14e9ea03-10bc-4388-89df-f4a37e537362?apiKey=f742a22b09984b259f2749b8e77545e3"
                                         alt="Framer Template | Cloudly — SaaS Cloud Product"
-                                        className="aspect-[1.11] object-contain object-center w-full overflow-hidden self-stretch"
+                                        className="aspect-[1.12] object-contain object-center w-full overflow-hidden self-stretch"
                                         width={200}
                                         height={200}
                                     />
                                 </button>
-                                <p className="text-neutral-50 text-base leading-[110%] self-stretch justify-center items-start grow mt-4 pt-7">
-                                    Framer Template | Cloudly — SaaS Cloud Product
-                                </p>
+                                <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
+                                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
+                                        Gestures-ug | Company Website | WordPress
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0">
@@ -75,13 +74,15 @@ function Footer() {
                                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/fa578891-4ec5-4638-8c69-0d3d741c1781?apiKey=f742a22b09984b259f2749b8e77545e3"
                                         alt="Website Template | Beamify — Crypto SaaS (Framer)"
                                         className="aspect-[1.12] object-contain object-center w-full overflow-hidden self-stretch"
-                                        width={250}
-                                        height={250}
+                                        width={200}
+                                        height={200}
                                     />
                                 </button>
-                                <p className="text-neutral-50 text-base leading-[110%] self-stretch justify-center items-start grow mt-4 pt-7">
-                                    Website Template | Beamify — Crypto SaaS (Framer)
-                                </p>
+                                <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
+                                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
+                                        Gestures-ug | Company Website | WordPress
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
