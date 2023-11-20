@@ -56,7 +56,7 @@ function HeroSection() {
               Latest Works
             </h2>
             <p className="text-zinc-50 text-opacity-60 text-base font-light leading-[140%] self-stretch">
-              Take a look at some projects I've worked on.
+              Take a look at some projects I&apos;ve worked on.
             </p>
           </div>
           <div className="self-stretch mt-6 max-md:max-w-full">
