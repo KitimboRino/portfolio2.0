@@ -29,7 +29,7 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center">Framer</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Framer</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -41,7 +41,7 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center">Figma</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Figma</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -53,7 +53,7 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center">ReactJS</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">ReactJS</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -65,7 +65,7 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center">Notion</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Notion</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -77,7 +77,7 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center">Trello</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Trello</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -89,7 +89,19 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-6">NextJS</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">NextJS</div>
+            </div>
+          </div>
+          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
+            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
+              <Image
+                loading="lazy"
+                src="/images/nextjs.png"
+                alt="Logo"
+                width={100}
+                height={100}
+              />
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Slack</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -101,7 +113,7 @@ function AboutSection() {
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center">Spotify</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Spotify</div>
             </div>
           </div>
         </div>
