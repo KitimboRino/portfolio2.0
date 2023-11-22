@@ -6,8 +6,7 @@ import { IoMailOutline } from "react-icons/io5";
 function HeroSection() {
   return (
     <main className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch  rounded-3xl border-solid">
-
-      <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/flowe.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/hero.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5" >
           <div className="justify-center items-center bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
             <a href="#" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
@@ -44,7 +43,7 @@ function HeroSection() {
         </section>
         <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
           <h2 className="text-neutral-50 text-5xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full"> Front End Dev Designing/ developing UIs for web, mobile, applications and interactive apps </h2>
-          <p className="text-neutral-50 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full"> Personal website where you can find a <br /> lot about me and what I do </p>
+          <p className="text-neutral-50 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full"> I design and develop experiences that <br /> make peoples lives simple. </p>
         </section>
       </div>
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pb-8 rounded-b-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
