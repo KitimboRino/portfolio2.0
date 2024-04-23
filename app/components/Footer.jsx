@@ -7,11 +7,10 @@ import Image from "next/image";
 // };
 
 function Footer() {
-
-
     return (
         <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch  bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
-            <div className="max-w-[81.25rem] items-start self-stretch flex flex-col max-md:max-w-full">
+            <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
+
                 <div className="items-start flex w-[198px] max-w-full flex-col self-start">
                     <h2 className="text-neutral-50 text-lg font-light leading-[120%] self-stretch">
                         Explore My Gigs

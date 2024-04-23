@@ -57,70 +57,69 @@ function HeroSection() {
             </p>
           </div>
           <div className="self-stretch mt-6 max-md:max-w-full">
-            <div className="self-stretch mt-6 max-md:max-w-full">
-              <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                <div className="flex flex-col items-stretch max-md:w-full max-md:ml-0">
-                  <div className="justify-center items-start flex flex-col max-md:mt-2.5">
-                    <button
-                    // onClick={handleButtonClick}
-                    >
-                      <Image
-                        loading="lazy"
-                        src="/images/GesturesSite.png"
-                        alt="Gestures website"
-                        width={400}
-                        height={400}
-                      />
-                    </button>
-                    <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                      <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                        World Merit Platform
-                      </p>
-                    </div>
+            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+              <div className="flex flex-col items-stretch max-md:w-full max-md:ml-0">
+                <div className="justify-center items-start flex flex-col max-md:mt-2.5">
+                  <button
+                  // onClick={handleButtonClick}
+                  >
+                    <Image
+                      loading="lazy"
+                      src="/images/GesturesSite.png"
+                      alt="Gestures website"
+                      width={400}
+                      height={400}
+                    />
+                  </button>
+                  <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
+                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
+                      World Merit Platform
+                    </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
-                  <div className="justify-center items-start flex grow flex-col max-md:mt-2.5">
-                    <button
-                    // onClick={handleButtonClick}
-                    >
-                      <Image
-                        loading="lazy"
-                        src="/images/Sentinelweb.png"
-                        alt="Sentinel Website"
-                        width={400}
-                        height={400}
-                      />
-                    </button>
-                    <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                      <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                        Sentinel Website
-                      </p>
-                    </div>
+              </div>
+              <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
+                <div className="justify-center items-start flex grow flex-col max-md:mt-2.5">
+                  <button
+                  // onClick={handleButtonClick}
+                  >
+                    <Image
+                      loading="lazy"
+                      src="/images/Sentinelweb.png"
+                      alt="Sentinel Website"
+                      width={400}
+                      height={400}
+                    />
+                  </button>
+                  <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
+                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
+                      Sentinel Website
+                    </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
-                  <div className="justify-center items-start flex grow flex-col max-md:mt-2.5">
-                    <button
-                    // onClick={handleButtonClick}
-                    >
-                      <Image
-                        loading="lazy"
-                        src="/images/GD.png"
-                        alt="Framer Template"
-                        width={400}
-                        height={400}
-                      />
-                    </button>
-                    <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                      <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                        Guild Digital Website
-                      </p>
-                    </div>
+              </div>
+              <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
+                <div className="justify-center items-start flex grow flex-col max-md:mt-2.5">
+                  <button
+                  // onClick={handleButtonClick}
+                  >
+                    <Image
+                      loading="lazy"
+                      src="/images/GD.png"
+                      alt="Framer Template"
+                      width={400}
+                      height={400}
+                    />
+                  </button>
+                  <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
+                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
+                      Guild Digital Website
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>{" "}
           <div className="justify-center items-center flex w-[127px] max-w-full grow flex-col mt-6 rounded-[3.125rem] self-end">
             <button
