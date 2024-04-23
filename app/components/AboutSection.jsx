@@ -119,20 +119,13 @@ function AboutSection() {
         </div>
         <div className="items-start flex w-[525px] max-w-full flex-col mt-16 self-start max-md:mt-10">
           <div className="text-neutral-50 text-lg font-light leading-[120%]">Favorite song</div>
-          <div className="text-zinc-50 text-opacity-100 text-base font-light leading-[140%] self-start max-md:max-w-full">Me personally, I can not listen anything else but podcast while working</div>
+          <div className="text-zinc-50 text-opacity-100 text-base font-light leading-[140%] self-start max-md:max-w-full">Me personally, I can not listen anything else but podcasts while working</div>
         </div>
 
         {/* Spotify integration */}
         <div className="min-w-[14rem] items-start self-stretch flex flex-col mt-6 rounded-xl max-md:max-w-full">
           <div className="bg-zinc-800 self-stretch px-3 py-3.5 max-w-full" style={{ borderRadius: '12px' }}>
-            <iframe
-              src="https://open.spotify.com/embed/show/24w9rYGFzEWdUxQSNhCAan?utm_source=generator"
-              width="100%"
-              height="152"
-              allowFullScreen={true}
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
+            <iframe src="https://open.spotify.com/embed/show/0Giuw6eNbTzP9CDZODDrA2?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
 
