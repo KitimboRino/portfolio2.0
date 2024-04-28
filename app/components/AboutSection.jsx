@@ -125,7 +125,7 @@ function AboutSection() {
         {/* Spotify integration */}
         <div className="min-w-[14rem] items-start self-stretch flex flex-col mt-6 rounded-xl max-md:max-w-full">
           <div className="bg-zinc-800 self-stretch px-3 py-3.5 max-w-full" style={{ borderRadius: '12px' }}>
-            <iframe src="https://open.spotify.com/embed/show/0Giuw6eNbTzP9CDZODDrA2?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/show/0Giuw6eNbTzP9CDZODDrA2?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
 
