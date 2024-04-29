@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { BsSearch } from 'react-icons/bs';
 
 function Header() {
@@ -21,22 +22,30 @@ function Header() {
               <div className="flex justify-center items-center gap-2.5 my-auto md:flex hidden">
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[67px] max-w-full flex-col rounded-[3.75rem]">
                   <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid">
-                    <a href="#">About</a>
+                    <Link href="/about">
+                      About
+                    </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[68px] max-w-full flex-col rounded-[3.75rem]">
                   <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
-                    <a href="#">Works</a>
+                    <Link href="/works">
+                      Works
+                    </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-14 max-w-full flex-col rounded-[3.75rem]">
                   <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid">
-                    <a href="#">Blog</a>
+                    <Link href="/blog">
+                      Blog
+                    </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-20 max-w-full flex-col rounded-[3.75rem]">
                   <div className="text-neutral-50 text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
-                    <a href="#">Contact</a>
+                    <Link href="/contact">
+                      Contact
+                    </Link>
                   </div>
                 </div>
               </div>

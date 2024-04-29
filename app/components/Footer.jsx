@@ -1,10 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from "next/image";
-
-
-// const handleButtonClick = () => {
-//     // Handle button click event here
-// };
 
 function Footer() {
     return (
@@ -87,11 +83,9 @@ function Footer() {
                     </div>
                 </div>
                 <div className="justify-center items-center flex w-[62px] max-w-full grow flex-col mt-6 rounded-[3.125rem] self-end">
-                    <button
-                        // onClick={handleButtonClick}
-                        className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--madiyour-com-alabaster,#FAFAFA)] w-full grow ml-0.5 pr-3 py-2 rounded-[3.125rem] border-solid">
+                    <Link href="/works" className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--madiyour-com-alabaster,#FAFAFA)] w-full grow pl-3 pr-3 py-2 rounded-[3.125rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                         More
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>
