@@ -9,8 +9,7 @@ export const metadata = {
 export default function About() {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
+      
     </>
   )
 }

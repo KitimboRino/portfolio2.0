@@ -1,5 +1,6 @@
 import AboutSection from "./components/AboutSection"
 import HeroSection from "./components/HeroSection"
+import Footer from "./components/Footer"
 
 export const metadata = {
   title: 'Home page',
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
+      <Footer />
     </>
   )
 }
