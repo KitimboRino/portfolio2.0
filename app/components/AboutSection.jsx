@@ -48,7 +48,7 @@ function AboutSection() {
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
-                src="/images/figma.png"
+                src="/images/react.png"
                 alt="Logo"
                 width={100}
                 height={100}
@@ -60,24 +60,26 @@ function AboutSection() {
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
-                src="/images/figma.png"
+                src="/images/notion.png"
                 alt="Logo"
                 width={100}
                 height={100}
+                className='mt-3'
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Notion</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-4">Notion</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
-                src="/images/figma.png"
+                src="/images/trello.svg"
                 alt="Logo"
                 width={100}
-                height={100}
+                height={200}
+                className='mt-3'
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Trello</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-4">Trello</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
@@ -96,12 +98,13 @@ function AboutSection() {
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
-                src="/images/nextjs.png"
+                src="/images/slack.png"
                 alt="Logo"
                 width={100}
                 height={100}
+                className='mt-4'
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Slack</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-8">Slack</div>
             </div>
           </div>
           <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
