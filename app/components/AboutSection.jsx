@@ -112,7 +112,7 @@ function AboutSection() {
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
-                src="/images/Spotify.png"
+                src="/images/logo.png"
                 alt="Logo"
                 width={100}
                 height={100}

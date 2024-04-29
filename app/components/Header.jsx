@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BsSearch } from 'react-icons/bs';
 
 function Header() {
@@ -15,9 +16,15 @@ function Header() {
             role="navigation"
           >
             <div className="items-start self-stretch flex w-[913px] max-w-full grow shrink-0 basis-auto justify-between gap-5 max-md:flex-wrap">
-              <div className="max-w-full justify-center items-center bg-zinc-400 bg-opacity-10 self-stretch flex w-[66px] flex-col px-5 py-1 rounded-xl">
-                <BsSearch className="text-white" />
-              </div>
+              <Link href="/" className="max-w-full justify-center items-center bg-white self-stretch flex w-[66px] flex-col px-5 py-1 rounded-xl">
+                <Image
+                  loading="lazy"
+                  src="/images/logo.png"
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                />
+              </Link>
               {/* Add lg:hidden to the outer div to hide on large screens */}
               <div className="flex justify-center items-center gap-2.5 my-auto md:flex hidden">
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[67px] max-w-full flex-col rounded-[3.75rem]">
