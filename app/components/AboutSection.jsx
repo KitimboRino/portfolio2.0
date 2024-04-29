@@ -123,7 +123,7 @@ function AboutSection() {
         </div>
         <div className="items-start flex w-[525px] max-w-full flex-col mt-16 self-start max-md:mt-10">
           <div className="text-neutral-50 text-lg font-light leading-[120%]">Favorite song</div>
-          <div className="text-zinc-50 text-opacity-100 text-base font-light leading-[140%] self-start max-md:max-w-full">Me personally, I can not listen anything else but podcasts while working</div>
+          <div className="text-zinc-50 text-opacity-60 text-base font-light leading-[140%] self-start max-md:max-w-full">I find myself leaning more towards podcasts while I work. It seems that nothing else quite captures my attention like a good podcast does.</div>
         </div>
 
         {/* Spotify integration */}
