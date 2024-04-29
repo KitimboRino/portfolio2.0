@@ -8,9 +8,9 @@ export const metadata = {
 }
 export default function About() {
   return (
-    <RootLayout>
+    <>
       <HeroSection />
       <AboutSection />
-    </RootLayout>
+    </>
   )
 }
