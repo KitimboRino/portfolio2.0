@@ -112,12 +112,12 @@ function AboutSection() {
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
-                src="/images/logo.png"
+                src="/images/spotify.png"
                 alt="Logo"
                 width={100}
                 height={100}
               />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Spotify</div>
+              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-2">Spotify</div>
             </div>
           </div>
         </div>
