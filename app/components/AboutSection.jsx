@@ -21,7 +21,7 @@ function AboutSection() {
           <div className="text-zinc-50 text-opacity-60 text-base font-light leading-[140%] self-start">Software frameworks and tools I use regularly.</div>
         </div>
         <div className="max-w-[78rem] items-start self-stretch flex gap-2.5 mt-9 mx-2.5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
+          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg ">
             <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
               <Image
                 loading="lazy"
@@ -29,6 +29,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
+                className='hover:scale-105 transition-transform duration-300 ease-in-out'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Framer</div>
             </div>
@@ -41,6 +42,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
+                className='hover:scale-105 transition-transform duration-300 ease-in-out'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Figma</div>
             </div>
@@ -53,6 +55,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
+                className='hover:scale-105 transition-transform duration-300 ease-in-out'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">ReactJS</div>
             </div>
@@ -65,7 +68,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
-                className='mt-3'
+                className='hover:scale-105 transition-transform duration-300 ease-in-out mt-3'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-4">Notion</div>
             </div>
@@ -78,7 +81,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={200}
-                className='mt-3'
+                className='hover:scale-105 transition-transform duration-300 ease-in-out mt-3'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-4">Trello</div>
             </div>
@@ -91,6 +94,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
+                className='hover:scale-105 transition-transform duration-300 ease-in-out'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">NextJS</div>
             </div>
@@ -103,7 +107,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
-                className='mt-4'
+                className='hover:scale-105 transition-transform duration-300 ease-in-out mt-4'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-8">Slack</div>
             </div>
@@ -116,6 +120,7 @@ function AboutSection() {
                 alt="Logo"
                 width={100}
                 height={100}
+                className='hover:scale-105 transition-transform duration-300 ease-in-out'
               />
               <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-2">Spotify</div>
             </div>

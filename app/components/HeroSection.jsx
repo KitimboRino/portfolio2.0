@@ -69,6 +69,7 @@ function HeroSection() {
                       alt="Gestures website"
                       width={400}
                       height={400}
+                      className='hover:scale-105 transition-transform duration-300 ease-in-out'
                     />
                   </a>
                   <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
@@ -87,6 +88,7 @@ function HeroSection() {
                       alt="Sentinel Website"
                       width={400}
                       height={400}
+                      className='hover:scale-105 transition-transform duration-300 ease-in-out'
                     />
                   </a>
                   <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
@@ -97,7 +99,7 @@ function HeroSection() {
                 </div>
               </div>
               <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
-                <div className="justify-center items-start flex grow flex-col max-md:mt-2.5">
+                <div className="justify-center items-start flex grow flex-col max-md:mt-2.5 ">
                   <a href="https://worldmerit.org" target="_blank" rel="noopener noreferrer">
                     <Image
                       loading="lazy"
@@ -105,6 +107,7 @@ function HeroSection() {
                       alt="Framer Template"
                       width={400}
                       height={400}
+                      className='hover:scale-105 transition-transform duration-300 ease-in-out'
                     />
                   </a>
                   <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
