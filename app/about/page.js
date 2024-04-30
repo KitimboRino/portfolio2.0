@@ -1,6 +1,5 @@
-import AboutSection from "../components/AboutSection"
-import HeroSection from "../components/HeroSection"
-import RootLayout from "../layout"
+import AboutHeroSection from "../components/AboutHero"
+
 
 export const metadata = {
   title: 'About page',
@@ -9,7 +8,7 @@ export const metadata = {
 export default function About() {
   return (
     <>
-      
+      <AboutHeroSection/>
     </>
   )
 }
