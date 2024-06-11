@@ -6,13 +6,13 @@ import Image from "next/image";
 const worksData = [
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/f0e05a7c-84b3-47b1-9216-a2c50453636b?apiKey=f742a22b09984b259f2749b8e77545e3",
-    alt: "Framer Template",
-    description: "Gestures-ug | Company Website | WordPress"
+    alt: "Website",
+    description: "World Merit Org | Company Website | WordPress"
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/14e9ea03-10bc-4388-89df-f4a37e537362?apiKey=f742a22b09984b259f2749b8e77545e3",
-    alt: "Framer Template | Cloudly — SaaS Cloud Product",
-    description: "Gestures-ug | Company Website | WordPress"
+    alt: "Flask | SaaS Product",
+    description: "TrashTruck | Web App | Flask"
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/fa578891-4ec5-4638-8c69-0d3d741c1781?apiKey=f742a22b09984b259f2749b8e77545e3",
