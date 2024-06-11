@@ -56,38 +56,40 @@ const contactLinks = [
 function AboutHeroSection() {
   return (
     <main className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch rounded-3xl border-solid">
-      <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/img.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
-          <h2 className="text-neutral-50 text-6xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full">
-            Passionate about<br />
-            designing/ developing UI for<br />
-            web, mobile applications and<br />
-            interactive apps.
-          </h2>
-          <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6"> Front End Engineer | UI/UX Designer <br /> Designer at World Merit Org. </p>
-          <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6"> World Merit Org, Dec 2022 - Present </p>
-        </section>
-        <div className="flex flex-row items-start justify-start self-start space-x-4">
-          {contactLinks.map((link, index) => (
-            <a key={index} href={link.href} target="_blank" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center self-start flex max-w-full flex-col my-auto rounded-xl mt-4">
-              <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
-                {link.isImage ? (
-                  <Image
-                    loading="lazy"
-                    src={link.imageUrl}
-                    alt={link.alt}
-                    width={link.width}
-                    height={link.height}
-                  />
-                ) : (
-                  <>
-                    {link.icon}
-                    <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch">{link.label}</p>
-                  </>
-                )}
-              </div>
-            </a>
-          ))}
+      <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/img.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
+          <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
+            <h2 className="text-neutral-50 text-6xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full">
+              Passionate about<br />
+              designing/ developing UI for<br />
+              web, mobile applications and<br />
+              interactive apps.
+            </h2>
+            <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6"> Front End Engineer | UI/UX Designer <br /> Designer at World Merit Org. </p>
+            <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6"> World Merit Org, Dec 2022 - Present </p>
+          </section>
+          <div className="flex flex-row items-start justify-start self-start space-x-4">
+            {contactLinks.map((link, index) => (
+              <a key={index} href={link.href} target="_blank" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center self-start flex max-w-full flex-col my-auto rounded-xl mt-4">
+                <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
+                  {link.isImage ? (
+                    <Image
+                      loading="lazy"
+                      src={link.imageUrl}
+                      alt={link.alt}
+                      width={link.width}
+                      height={link.height}
+                    />
+                  ) : (
+                    <>
+                      {link.icon}
+                      <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch">{link.label}</p>
+                    </>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </main>
