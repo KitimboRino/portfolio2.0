@@ -3,7 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
 
-
+const latestWorks = [
+  {
+    title: "Gestures Ug website",
+    imageUrl: "/images/Gestures.png",
+    link: "https://gestures-ug.com"
+  },
+  {
+    title: "Sentinel Digital Tech Website",
+    imageUrl: "/images/SDT.png",
+    link: "https://sentineldigitaltechnologies.com"
+  },
+  {
+    title: "World Merit Platform",
+    imageUrl: "/images/WorldMerit.png",
+    link: "https://worldmerit.org"
+  }
+];
 
 function HeroSection() {
   return (
@@ -60,66 +76,29 @@ function HeroSection() {
           </div>
           <div className="self-stretch mt-6 max-md:max-w-full">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col items-stretch max-md:w-full max-md:ml-0">
-                <div className="justify-center items-start flex flex-col max-md:mt-2.5">
-                  <a href="https://gestures-ug.com" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      loading="lazy"
-                      src="/images/Gestures.png"
-                      alt="Gestures website"
-                      width={400}
-                      height={400}
-                      className='hover:scale-105 transition-transform duration-300 ease-in-out'
-                    />
-                  </a>
-                  <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                      Gestures Ug website
-                    </p>
+              {latestWorks.map((work, index) => (
+                <div key={index} className="flex flex-col items-stretch max-md:w-full max-md:ml-0">
+                  <div className="justify-center items-start flex flex-col max-md:mt-2.5">
+                    <a href={work.link} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        loading="lazy"
+                        src={work.imageUrl}
+                        alt={work.title}
+                        width={400}
+                        height={400}
+                        className='hover:scale-105 transition-transform duration-300 ease-in-out'
+                      />
+                    </a>
+                    <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
+                      <p className="text-neutral-50 text-base leading-[110%] self-stretch">
+                        {work.title}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
-                <div className="justify-center items-start flex grow flex-col max-md:mt-2.5">
-                  <a href="https://sentineldigitaltechnologies.com" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      loading="lazy"
-                      src="/images/SDT.png"
-                      alt="Sentinel Website"
-                      width={400}
-                      height={400}
-                      className='hover:scale-105 transition-transform duration-300 ease-in-out'
-                    />
-                  </a>
-                  <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                      Sentinel Digital Tech Website
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
-                <div className="justify-center items-start flex grow flex-col max-md:mt-2.5 ">
-                  <a href="https://worldmerit.org" target="_blank" rel="noopener noreferrer">
-                    <Image
-                      loading="lazy"
-                      src="/images/WorldMerit.png"
-                      alt="Framer Template"
-                      width={400}
-                      height={400}
-                      className='hover:scale-105 transition-transform duration-300 ease-in-out'
-                    />
-                  </a>
-                  <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
-                    <p className="text-neutral-50 text-base leading-[110%] self-stretch">
-                      World Merit Platform
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
-
-          </div>{" "}
+          </div>
           <div className="justify-center items-center flex w-[127px] max-w-full grow flex-col mt-6 rounded-[3.125rem] self-end">
             <Link href="/works" className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--madiyour-com-alabaster,#FAFAFA)] w-full grow pl-3 pr-3 py-2 rounded-[3.125rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
               More Projects
@@ -131,4 +110,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
+export default HeroSection;

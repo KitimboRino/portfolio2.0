@@ -1,10 +1,54 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// JSON data for software tools
+const softwareTools = [
+  {
+    name: 'Framer',
+    imageUrl: '/images/framer.png',
+    alt: 'Framer Logo'
+  },
+  {
+    name: 'Figma',
+    imageUrl: '/images/figma.png',
+    alt: 'Figma Logo'
+  },
+  {
+    name: 'ReactJS',
+    imageUrl: '/images/react.png',
+    alt: 'ReactJS Logo'
+  },
+  {
+    name: 'Notion',
+    imageUrl: '/images/notion.png',
+    alt: 'Notion Logo'
+  },
+  {
+    name: 'Trello',
+    imageUrl: '/images/trello.svg',
+    alt: 'Trello Logo'
+  },
+  {
+    name: 'NextJS',
+    imageUrl: '/images/nextjs.png',
+    alt: 'NextJS Logo'
+  },
+  {
+    name: 'Slack',
+    imageUrl: '/images/slack.png',
+    alt: 'Slack Logo'
+  },
+  {
+    name: 'Spotify',
+    imageUrl: '/images/spotify.png',
+    alt: 'Spotify Logo'
+  }
+];
+
 function AboutSection() {
   return (
-    <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch  bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
+    <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
       <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
         <div className="max-w-[81rem] items-start self-stretch flex flex-col max-md:max-w-full">
           <div className="justify-center items-center flex w-[258px] max-w-full flex-col self-start">
@@ -21,110 +65,21 @@ function AboutSection() {
           <div className="text-zinc-50 text-opacity-60 text-base font-light leading-[140%] self-start">Software frameworks and tools I use regularly.</div>
         </div>
         <div className="max-w-[78rem] items-start self-stretch flex gap-2.5 mt-9 mx-2.5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg ">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/framer.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Framer</div>
+          {softwareTools.map((tool, index) => (
+            <div key={index} className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg ">
+              <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
+                <Image
+                  loading="lazy"
+                  src={tool.imageUrl}
+                  alt={tool.alt}
+                  width={100}
+                  height={100}
+                  className='hover:scale-105 transition-transform duration-300 ease-in-out'
+                />
+                <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">{tool.name}</div>
+              </div>
             </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/figma.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">Figma</div>
-            </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/react.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">ReactJS</div>
-            </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/notion.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out mt-3'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-4">Notion</div>
-            </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/trello.svg"
-                alt="Logo"
-                width={100}
-                height={200}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out mt-3'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-4">Trello</div>
-            </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/nextjs.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-3">NextJS</div>
-            </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/slack.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out mt-4'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-8">Slack</div>
-            </div>
-          </div>
-          <div className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg">
-            <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
-              <Image
-                loading="lazy"
-                src="/images/spotify.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                className='hover:scale-105 transition-transform duration-300 ease-in-out'
-              />
-              <div className="text-zinc-50 text-opacity-60 text-sm font-light leading-[140%] self-center mt-2">Spotify</div>
-            </div>
-          </div>
+          ))}
         </div>
         <div className="items-start flex w-[525px] max-w-full flex-col mt-16 self-start max-md:mt-10">
           <div className="text-neutral-50 text-lg font-light leading-[120%]">Favorite song</div>
@@ -145,7 +100,7 @@ function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default AboutSection
+export default AboutSection;
