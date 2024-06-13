@@ -82,7 +82,7 @@ const SetupCard = () => {
                                             className='hover:scale-105 transition-transform duration-300 ease-in-out'
                                         />
                                     {/* </div> */}
-                                    <p className="text-xs">{item.name}</p>
+                                    <p className="text-xs text-zinc-50 text-opacity-60">{item.name}</p>
                                 </div>
                             ))}
                         </div>

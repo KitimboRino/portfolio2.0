@@ -39,7 +39,7 @@ const AchievementCard = () => {
                                 <p className="text-sm text-zinc-50 text-opacity-60">{achievement.date}</p>
                             </div>
                             <div className="text-right">
-                                <p className="bg-gray-700 px-3 py-1 rounded-full text-sm">{achievement.type}</p>
+                                <p className="bg-gray-700 px-3 py-1 rounded-full text-sm text-zinc-50 text-opacity-60">{achievement.type}</p>
                             </div>
                         </div>
                     ))}
