@@ -26,7 +26,7 @@ const softwareTools = [
   },
   {
     name: 'Trello',
-    imageUrl: '/images/trello.svg',
+    imageUrl: '/images/trello.png',
     alt: 'Trello Logo'
   },
   {
@@ -43,6 +43,11 @@ const softwareTools = [
     name: 'Spotify',
     imageUrl: '/images/spotify.png',
     alt: 'Spotify Logo'
+  },
+  {
+    name: 'zoom',
+    imageUrl: '/images/zoom.png',
+    alt: 'Zoom Logo'
   }
 ];
 
