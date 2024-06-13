@@ -4,21 +4,24 @@ import Image from "next/image";
 
 // Define the works data
 const worksData = [
-  {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/f0e05a7c-84b3-47b1-9216-a2c50453636b?apiKey=f742a22b09984b259f2749b8e77545e3",
-    alt: "Website",
-    description: "World Merit Org | Company Website | WordPress"
-  },
-  {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/14e9ea03-10bc-4388-89df-f4a37e537362?apiKey=f742a22b09984b259f2749b8e77545e3",
-    alt: "Flask | SaaS Product",
-    description: "TrashTruck | Web App | Flask"
-  },
-  {
-    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/fa578891-4ec5-4638-8c69-0d3d741c1781?apiKey=f742a22b09984b259f2749b8e77545e3",
-    alt: "Website Template | Beamify — Crypto SaaS (Framer)",
-    description: "Gestures-ug | Company Website | WordPress"
-  }
+    {
+        src: "/images/wmplatform.png",
+        alt: "Webs App | World Merit Platform",
+        description: "World Merit Org | Web App | NextJS",
+        link: "https://platform.worldmerit.org/"
+    },
+    {
+        src: "/images/littlelemon.png",
+        alt: "ReactJS | Resturant Website",
+        description: "Little Lemon | Web App | ReactJS",
+        link: "https://meta-developer-frontend-capstone-project-rixm3lquo-krino0580.vercel.app/"
+    },
+    {
+        src: "/images/finalspace.png",
+        alt: "Website",
+        description: "Final Space Characters | Website | ReactJS",
+        link: "https://final-space-characters.netlify.app/"
+    }
 ];
 
 function Footer() {
@@ -38,7 +41,8 @@ function Footer() {
                         {worksData.map((work, index) => (
                             <div key={index} className="flex flex-col items-stretch w-[33%] max-md:w-full max-md:ml-0">
                                 <div className="justify-center items-start flex flex-col max-md:mt-2.5">
-                                    <button>
+                                    <a href={work.link} target="_blank" rel="noopener noreferrer">
+
                                         <Image
                                             loading="lazy"
                                             src={work.src}
@@ -47,7 +51,7 @@ function Footer() {
                                             width={200}
                                             height={200}
                                         />
-                                    </button>
+                                    </a>
                                     <div className="justify-center items-start self-stretch flex grow flex-col mt-4">
                                         <p className="text-neutral-50 text-base leading-[110%] self-stretch">
                                             {work.description}
