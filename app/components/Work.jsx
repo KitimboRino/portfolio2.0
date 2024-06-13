@@ -36,14 +36,14 @@ const WorkExperienceCard = () => {
         <ul>
           {workExperiences.map((experience, index) => (
             <li key={index}>
-              <div className="grid grid-cols-3 gap-4 items-center">
-                <div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-12 gap-6">
+                <div className="col-span-6 text-left">
                   <p className="text-neutral-50 font-semibold">{experience.organization}</p>
                 </div>
-                <div className="text-left">
+                <div className="col-span-4 text-left">
                   <p className="text-neutral-50 text-sm">{experience.role}</p>
                 </div>
-                <div className="text-right">
+                <div className="col-span-2 text-left">
                   <p className="text-neutral-50 text-sm">
                     {experience.startYear} — {experience.endYear}
                   </p>
