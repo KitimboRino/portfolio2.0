@@ -28,6 +28,26 @@ const stackItems = [
         imageUrl: '/images/framer.png',
         alt: 'Framer Logo'
     },
+    {
+        name: 'WordPress',
+        imageUrl: '/images/wp.png',
+        alt: 'WordPress Logo'
+    },
+    {
+        name: 'JavaScript',
+        imageUrl: '/images/javascript.png',
+        alt: 'JavaScript Logo'
+    },
+    {
+        name: 'Flask',
+        imageUrl: '/images/flask.png',
+        alt: 'Flask Logo'
+    },
+    {
+        name: 'Python',
+        imageUrl: '/images/python.png',
+        alt: 'Python Logo'
+    },
 ];
 
 const SetupCard = () => {
@@ -47,7 +67,7 @@ const SetupCard = () => {
                     <div className="bg-gray-800 p-4 rounded-lg">
                         <h3 className="text-xl text-zinc-50 text-opacity-60 mb-2">Stack</h3>
                         <p className="text-neutral-50 text-2xl mb-4">Things I use all the time</p>
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
                             {stackItems.map((item, index) => (
                                 <div key={index} className="flex flex-col items-center justify-center p-2 bg-gray-700 rounded-lg">
                                     {/* <div className="bg-gray-600 p-2 rounded-full mb-2"> */}

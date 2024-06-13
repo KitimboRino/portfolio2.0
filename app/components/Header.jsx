@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BsSearch } from 'react-icons/bs';
+// import { BsSearch } from 'react-icons/bs';
 
 function Header() {
   return (
