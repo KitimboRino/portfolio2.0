@@ -1,12 +1,33 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const stackItems = [
-    { name: 'JavaScript', icon: 'JSIcon' },
-    { name: 'C', icon: 'CIcon' },
-    { name: 'HTML', icon: 'HTMLIcon' },
-    { name: 'Python', icon: 'PythonIcon' },
-    { name: 'Figma', icon: 'FigmaIcon' },
-    { name: 'Framer', icon: 'FramerIcon' },
+    {
+        name: 'Figma',
+        imageUrl: '/images/figma.png',
+        alt: 'Figma Logo'
+    },
+    {
+        name: 'ReactJS',
+        imageUrl: '/images/react.png',
+        alt: 'ReactJS Logo'
+    },
+    {
+        name: 'NextJS',
+        imageUrl: '/images/nextjs.png',
+        alt: 'NextJS Logo'
+    },
+    {
+        name: 'NodeJS',
+        imageUrl: '/images/nodejs.png',
+        alt: 'NodeJS Logo'
+    },
+    {
+        name: 'Framer',
+        imageUrl: '/images/framer.png',
+        alt: 'Framer Logo'
+    },
 ];
 
 const SetupCard = () => {
@@ -29,10 +50,18 @@ const SetupCard = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                             {stackItems.map((item, index) => (
                                 <div key={index} className="flex flex-col items-center justify-center p-2 bg-gray-700 rounded-lg">
-                                    <div className="bg-gray-600 p-2 rounded-full mb-2">
+                                    {/* <div className="bg-gray-600 p-2 rounded-full mb-2"> */}
                                         {/* Replace with actual icon */}
-                                        <span className="text-lg">{item.icon}</span>
-                                    </div>
+                                        {/* <span className="text-lg">{item.icon}</span> */}
+                                        <Image
+                                            loading="lazy"
+                                            src={item.imageUrl}
+                                            alt={item.alt}
+                                            width={50}
+                                            height={50}
+                                            className='hover:scale-105 transition-transform duration-300 ease-in-out'
+                                        />
+                                    {/* </div> */}
                                     <p className="text-xs">{item.name}</p>
                                 </div>
                             ))}
