@@ -38,13 +38,13 @@ const WorkExperienceCard = () => {
             <li key={index}>
               <div className="grid grid-cols-3 gap-4 items-center">
                 <div>
-                  <p className="font-semibold">{experience.organization}</p>
+                  <p className="text-neutral-50 font-semibold">{experience.organization}</p>
                 </div>
                 <div className="text-left">
-                  <p className="text-sm">{experience.role}</p>
+                  <p className="text-neutral-50 text-sm">{experience.role}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-sm">
+                  <p className="text-neutral-50 text-sm">
                     {experience.startYear} — {experience.endYear}
                   </p>
                 </div>

@@ -51,7 +51,7 @@ const SkillsCard = () => {
         <ul className="grid grid-cols-5 gap-4">
           {mySkills.map((skill, index) => (
             <li key={index} className="mt-2">
-              <div className="text-sm">{skill.skill}</div>
+              <div className="text-sm text-neutral-50">{skill.skill}</div>
             </li>
           ))}
         </ul>
