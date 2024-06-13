@@ -18,9 +18,11 @@ const PhotoCard = () => {
                     />
                 </div>
                 <div className="text-center">
-                    <button className="bg-red-500 text-neutral-50 w-3/4 md:w-1/2 px-4 py-2 rounded-md hover:bg-red-600">
-                        Works
-                    </button>
+                    <a href="https://rinos-travelogue-gallery-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button className="bg-red-500 text-neutral-50 w-3/4 md:w-1/2 px-4 py-2 rounded-md hover:bg-red-600">
+                            Gallery
+                        </button>
+                    </a>
                 </div>
             </div>
         </section >
