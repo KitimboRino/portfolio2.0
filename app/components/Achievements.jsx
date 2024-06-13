@@ -28,8 +28,6 @@ const AchievementCard = () => {
     return (
         <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
             <div className="max-w-[1258px] self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
-
-
                 <h2 className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-1 max-md:max-w-full mt-1">Achievements</h2>
                 <p className="text-neutral-50 text-3xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full mb-2">Every degree, certificate, course I ever gathered</p>
 
@@ -37,8 +35,8 @@ const AchievementCard = () => {
                     {achievements.map((achievement, index) => (
                         <div key={index} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg">
                             <div>
-                                <p className="font-semibold">{achievement.title}</p>
-                                <p className="text-sm text-gray-400">{achievement.date}</p>
+                                <p className="text-neutral-50 text-xl">{achievement.title}</p>
+                                <p className="text-sm text-zinc-50 text-opacity-60">{achievement.date}</p>
                             </div>
                             <div className="text-right">
                                 <p className="bg-gray-700 px-3 py-1 rounded-full text-sm">{achievement.type}</p>
