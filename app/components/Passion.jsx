@@ -6,15 +6,18 @@ const Passion = () => {
             <div className="max-w-[1258px] self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
                 <div className="text-left mb-4">
                     <h3 className="text-neutral-50 text-3xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full mb-3">
-                        I've always had a passion for travel, but I've <br />
+                        I&apos;ve always had a passion for travel, but I&apos;ve <br />
                         never had the chance to explore it fully. What I <br />
                         do during my free time is take walks and have <br />
-                        road trips with friends once in a while</h3>
+                        road trips with friends once in a while
+                    </h3>
                     <h2 className="text-zinc-50 text-opacity-60 text-xl font-light leading-[120%] self-stretch mt-1 max-md:max-w-full mt-1">
-                        So it not like I gave up or anything. Making videos or
-                        photos is always a big thing to me. It's just that I
+                        So it&apos;s not like I gave up or anything. Making videos or
+                        photos is always a big thing to me. It&apos;s just that I
                         found my new passion that has everything I ever
-                        liked in it.</h2>
+                        liked in it.
+                    </h2>
+
                 </div>
             </div>
         </section >
