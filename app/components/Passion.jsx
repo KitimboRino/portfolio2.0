@@ -17,7 +17,6 @@ const Passion = () => {
                         found my new passion that has everything I ever
                         liked in it.
                     </h2>
-
                 </div>
             </div>
         </section >
