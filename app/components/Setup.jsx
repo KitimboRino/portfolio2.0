@@ -17,15 +17,15 @@ const SetupCard = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Setup Section */}
                     <div className="bg-gray-800 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2">Setup</h3>
-                        <p className="text-sm mb-4">I spend here most of my time</p>
+                        <h3 className="text-xl text-zinc-50 text-opacity-60 mb-2">Setup</h3>
+                        <p className="text-neutral-50 text-2xl mb-4">I spend here most of my time</p>
                         <img src="setup_image_url" alt="Setup" className="rounded-lg" />
                     </div>
 
                     {/* Stack Section */}
                     <div className="bg-gray-800 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2">Stack</h3>
-                        <p className="text-sm mb-4">Things I use all the time</p>
+                        <h3 className="text-xl text-zinc-50 text-opacity-60 mb-2">Stack</h3>
+                        <p className="text-neutral-50 text-2xl mb-4">Things I use all the time</p>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                             {stackItems.map((item, index) => (
                                 <div key={index} className="flex flex-col items-center justify-center p-2 bg-gray-700 rounded-lg">
@@ -41,14 +41,14 @@ const SetupCard = () => {
 
                     {/* Screen Section */}
                     <div className="bg-gray-800 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2">Screen</h3>
-                        <p className="text-sm">Samsung 28 inch monitor</p>
+                        <h3 className="text-xl text-zinc-50 text-opacity-60 mb-2">Screen</h3>
+                        <p className="text-neutral-50 text-2xl">Samsung 28 inch monitor</p>
                     </div>
 
                     {/* Keyboard Section */}
                     <div className="bg-gray-800 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2">Keyboard</h3>
-                        <p className="text-sm">logitech mx keys</p>
+                        <h3 className="text-xl text-zinc-50 text-opacity-60 mb-2">Keyboard</h3>
+                        <p className="text-neutral-50 text-2xl">logitech mx keys</p>
                     </div>
 
                     {/* Laptop Section */}
@@ -56,13 +56,13 @@ const SetupCard = () => {
                         <div className="flex justify-between items-center">
 
                             <div>
-                                <h3 className="text-xl font-semibold">Laptop</h3>
-                                <p className="text-sm">Macbook M1 Pro</p>
+                                <h3 className="text-xl text-zinc-50 text-opacity-60">Laptop</h3>
+                                <p className="text-neutral-50 text-2xl">Macbook M1 Pro</p>
                             </div>
                             <div className="text-right">
-                                <p className="text-xs">Specs:</p>
-                                <p className="text-xs">M1</p>
-                                <p className="text-xs">16 GB RAM</p>
+                                <p className="text-base text-zinc-50 text-opacity-60">Specs:</p>
+                                <p className="text-base text-zinc-50 text-opacity-60">M1</p>
+                                <p className="text-base text-zinc-50 text-opacity-60">8 GB RAM</p>
                             </div>
                         </div>
                     </div>
