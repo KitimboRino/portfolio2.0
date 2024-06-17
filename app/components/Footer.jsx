@@ -47,7 +47,7 @@ function Footer() {
                                             loading="lazy"
                                             src={work.src}
                                             alt={work.alt}
-                                            className="aspect-[1.12] object-contain object-center w-full overflow-hidden self-stretch"
+                                            className='hover:scale-105 transition-transform duration-300 ease-in-out aspect-[1.12] object-contain object-center w-full overflow-hidden self-stretch'
                                             width={200}
                                             height={200}
                                         />

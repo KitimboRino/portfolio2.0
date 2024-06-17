@@ -31,9 +31,9 @@ const AchievementCard = () => {
                 <h2 className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-1 max-md:max-w-full mt-1">Achievements</h2>
                 <p className="text-neutral-50 text-3xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full mb-2">Every degree, certificate, course I ever gathered</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 ">
                     {achievements.map((achievement, index) => (
-                        <div key={index} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg">
+                        <div key={index} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div>
                                 <p className="text-neutral-50 text-xl">{achievement.title}</p>
                                 <p className="text-sm text-zinc-50 text-opacity-60">{achievement.date}</p>

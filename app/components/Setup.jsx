@@ -69,10 +69,7 @@ const SetupCard = () => {
                         <p className="text-neutral-50 text-2xl mb-4">Things I use all the time</p>
                         <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
                             {stackItems.map((item, index) => (
-                                <div key={index} className="flex flex-col items-center justify-center p-2 bg-gray-700 rounded-lg">
-                                    {/* <div className="bg-gray-600 p-2 rounded-full mb-2"> */}
-                                        {/* Replace with actual icon */}
-                                        {/* <span className="text-lg">{item.icon}</span> */}
+                                <div key={index} className="flex flex-col items-center justify-center p-2 bg-gray-700 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
                                         <Image
                                             loading="lazy"
                                             src={item.imageUrl}
@@ -81,7 +78,6 @@ const SetupCard = () => {
                                             height={50}
                                             className='hover:scale-105 transition-transform duration-300 ease-in-out'
                                         />
-                                    {/* </div> */}
                                     <p className="text-xs text-zinc-50 text-opacity-60">{item.name}</p>
                                 </div>
                             ))}
