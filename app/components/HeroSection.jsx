@@ -27,7 +27,7 @@ function HeroSection() {
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/hero.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5" >
           <div className="justify-center items-center bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
-            <a href="#" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
+            <a href="mailto:your.kitimborinoemma0580@gmail.com" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
               <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-2 pb-8 px-8 rounded-xl border-solid max-md:px-5">
                 <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl"> + </h1>
                 <p className="text-neutral-50 text-sm font-light leading-[140%] self-stretch">Start project</p>
