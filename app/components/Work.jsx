@@ -8,6 +8,12 @@ const workExperiences = [
     endYear: 'Present',
   },
   {
+    organization: 'Sentinel Digital Technologies',
+    role: 'Software Engineer',
+    startYear: 2023,
+    endYear: 'Present',
+  },
+  {
     organization: 'Guild Digital',
     role: 'Software Engineer',
     startYear: 2022,

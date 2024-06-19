@@ -63,10 +63,10 @@ function ContactCard() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <p className="mb-4 text-neutral-50 text-base">
-            Feel free to reach out to me through any of these platforms. I&apos;m always open to making new connections and assisting anyone who might have questions or concerns about my work or anything related to my blog. Whether you need advice, troubleshooting help, or just want to chat, I&apos;m here to lend a helping hand.
+            Feel free to reach out to me through any of these platforms. I'm always open to making new connections and assisting anyone who might have questions or concerns about my work or anything related to my blog. Whether you need advice, troubleshooting help, or just want to chat, I'm here to lend a helping hand.
           </p>
           <p className="mb-4 text-neutral-50 text-base">
-            Additionally, if you&apos;re interested in the topics I cover on my blog and have questions or suggestions for future content, I&apos;d love to hear from you. Your feedback and input are incredibly valuable to me, and I&apos;m always striving to create content that resonates with my audience.
+            Additionally, if you're interested in the topics I cover on my blog and have questions or suggestions for future content, I'd love to hear from you. Your feedback and input are incredibly valuable to me, and I'm always striving to create content that resonates with my audience.
           </p>
         </div>
 
