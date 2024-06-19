@@ -76,9 +76,9 @@ function WorksCard() {
         {/* Works */}
         <div className="flex flex-wrap">
           {filteredItems.map((item, index) => (
-            <div key={index} className="w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div key={index} className="w-full sm:w-1/2 lg:w-1/4 p-2 ">
               <div className="bg-gray-800 rounded-lg overflow-hidden">
-                <img src={item.imageUrl} alt={item.title} className="w-full h-48 object-cover" />
+                <img src={item.imageUrl} alt={item.title} className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out" />
                 <div className="p-4">
                   <h3 className="text-xl mb-2">{item.title}</h3>
                   <p className="text-gray-400">{item.description}</p>
