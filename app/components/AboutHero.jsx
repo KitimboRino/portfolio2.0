@@ -15,40 +15,30 @@ const contactLinks = [
     href: 'https://github.com/KitimboRino',
     imageUrl: '/images/github.png',
     alt: 'GitHub Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://www.linkedin.com/in/rino-kitimbo-881090116/',
     imageUrl: '/images/linkedin.png',
     alt: 'LinkedIn Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://www.instagram.com/life_of_kred/',
     imageUrl: '/images/instagram.png',
     alt: 'Instagram Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://twitter.com/RiNO_KED',
     imageUrl: '/images/twitter.png',
     alt: 'Twitter Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://wa.me/+256706144964',
     imageUrl: '/images/whatsapp.png',
     alt: 'WhatsApp Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
 ];
@@ -77,8 +67,8 @@ function AboutHeroSection() {
                       loading="lazy"
                       src={link.imageUrl}
                       alt={link.alt}
-                      width={link.width}
-                      height={link.height}
+                      width={20}
+                      height={20}
                     />
                   ) : (
                     <>
