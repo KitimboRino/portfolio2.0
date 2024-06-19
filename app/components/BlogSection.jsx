@@ -31,7 +31,7 @@ function BlogSection() {
               Blog
             </h2>
             <p className="text-neutral-50 text-2xl font-light leading-[140%] self-stretch">
-              I write about studying, work, travelling, freelancing,<br /> tech, UI, UX and many-many more.
+              I write about studying, work, travelling, freelancing,<br /> tech, UI, UX and more.
             </p>
           </div>
         </section>
