@@ -70,14 +70,16 @@ const SetupCard = () => {
                         <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
                             {stackItems.map((item, index) => (
                                 <div key={index} className="flex flex-col items-center justify-center p-2 bg-gray-700 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-                                        <Image
-                                            loading="lazy"
-                                            src={item.imageUrl}
-                                            alt={item.alt}
-                                            width={50}
-                                            height={50}
-                                            className='hover:scale-105 transition-transform duration-300 ease-in-out'
-                                        />
+                                    <Image
+                                        loading="lazy"
+                                        src={item.imageUrl}
+                                        alt={item.alt}
+                                        placeholder='blur'
+                                        blurDataURL='/images/logo.png'
+                                        width={50}
+                                        height={50}
+                                        className='hover:scale-105 transition-transform duration-300 ease-in-out'
+                                    />
                                     <p className="text-xs text-zinc-50 text-opacity-60">{item.name}</p>
                                 </div>
                             ))}
