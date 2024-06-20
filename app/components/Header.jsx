@@ -34,28 +34,28 @@ function Header() {
               {/* Use md:flex to show on medium and larger screens, hidden on small screens */}
               <div className="flex justify-center items-center gap-2.5 my-auto hidden md:flex">
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[67px] max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/about">
                       About
                     </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[68px] max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/works">
                       Works
                     </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-14 max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/blog">
                       Blog
                     </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-20 max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-neutral-50 text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-neutral-50 text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/contact">
                       Contact
                     </Link>
@@ -64,8 +64,8 @@ function Header() {
               </div>
               {/* Mobile menu (visible on small screens) */}
               <div className="flex md:hidden justify-center items-center">
-                <button 
-                  className="text-white" 
+                <button
+                  className="text-white"
                   aria-label="Toggle menu"
                   onClick={toggleDropdown}
                 >
@@ -77,29 +77,29 @@ function Header() {
             {/* Dropdown menu for mobile */}
             {isDropdownOpen && (
               <div className="flex flex-col mt-2 gap-2.5 md:hidden">
-                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-full max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full px-3 py-1 rounded-[3.75rem] border-solid">
+                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-full max-w-full flex-col">
+                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full px-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out hover:rounded-[2rem]">
                     <Link href="/about">
                       About
                     </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-full max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full pl-3 pr-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/works">
                       Works
                     </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-full max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full px-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full px-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/blog">
                       Blog
                     </Link>
                   </div>
                 </div>
                 <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-full max-w-full flex-col rounded-[3.75rem]">
-                  <div className="text-neutral-50 text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
+                  <div className="text-neutral-50 text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full pl-3 pr-3 py-1 rounded-[3.75rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Link href="/contact">
                       Contact
                     </Link>
