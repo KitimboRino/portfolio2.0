@@ -15,6 +15,8 @@ const PhotoCard = () => {
                         layout="fill"
                         objectFit="cover"
                         className="rounded-xl"
+                        placeholder='blur'
+                        blurDataURL='/images/logo.png'
                     />
                 </div>
                 <div className="text-center">

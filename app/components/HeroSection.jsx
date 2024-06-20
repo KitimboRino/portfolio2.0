@@ -84,6 +84,8 @@ function HeroSection() {
                         loading="lazy"
                         src={work.imageUrl}
                         alt={work.title}
+                        placeholder='blur'
+                        blurDataURL='/images/logo.png'
                         width={400}
                         height={400}
                         className='hover:scale-105 transition-transform duration-300 ease-in-out'

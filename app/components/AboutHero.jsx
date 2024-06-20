@@ -48,7 +48,7 @@ function AboutHeroSection() {
     <main className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch rounded-3xl border-solid">
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/img.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
-          <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
+          <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-22 max-md:max-w-full max-md:mt-10">
             <h2 className="text-neutral-50 text-6xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full">
               Passionate about<br />
               designing/ developing UI for<br />
