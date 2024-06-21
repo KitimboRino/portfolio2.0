@@ -84,7 +84,7 @@ function WorksCard() {
   return (
     <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
       <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 mt-22 max-md:max-w-full">
-        <h2 className="text-3xl mb-4">Works</h2>
+        <h2 className="text-3xl text-neutral-50 mb-4">Works</h2>
         <p className="text-neutral-50 text-2xl mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           All my works across all industries I engage in. <br />You can find various projects and some of my fun learning experiments here.
         </p>
@@ -115,7 +115,7 @@ function WorksCard() {
                   height={400}
                   className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out" />
                 <div className="p-4">
-                  <h3 className="text-xl mb-2">{item.title}</h3>
+                  <h3 className="text-xl text-neutral-50 mb-2">{item.title}</h3>
                   <p className="text-gray-400">{item.description}</p>
                   <div className="inline-block mt-2 bg-gray-700 text-sm py-1 px-3 rounded">
                     {item.categories.join(', ')}
