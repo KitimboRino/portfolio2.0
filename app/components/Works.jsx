@@ -10,36 +10,64 @@ const works = [
     imageUrl: "/images/Gestures.png",
     link: "https://gestures-ug.com",
     description: "A website for a local company that deals in manufucturing furniture",
-    categories: ["Web Development", "UI/UX Design", "Landing Pages"]
+    categories: ["UI/UX Design", "Landing Pages"]
   },
   {
     title: "Sentinel Digital Tech Website",
     imageUrl: "/images/SDT.png",
     link: "https://sentineldigitaltechnologies.com",
     description: "A website for a tech start-up company.",
-    categories: ["Web Development", "UI/UX Design", "Landing Pages"]
+    categories: ["UI/UX Design", "Landing Pages"]
   },
   {
     title: "World Merit Platform",
     imageUrl: "/images/WorldMerit.png",
     link: "https://worldmerit.org",
     description: "A platform for a global community that deals in social impact projects.",
-    categories: ["Web Development", "UI/UX Design", "Graphic Design", "Landing Pages"]
+    categories: ["Web Development", "UI/UX Design"]
   },
   {
     title: "Little Lemon",
     imageUrl: "/images/littlelemon.png",
     link: "https://meta-developer-frontend-capstone-project-rixm3lquo-krino0580.vercel.app/",
     description: "A website for a restaurant called Little Lemon",
-    categories: ["Web Development", "Graphic Design", "UI/UX Design", "Landing Pages"]
+    categories: ["Web Development", "Landing Pages"]
   },
   {
     title: "Final Space Characters",
     imageUrl: "/images/finalspace.png",
     link: "https://final-space-characters.netlify.app/",
     description: "Final Space Characters characters website",
-    categories: ["Website", "Graphic Design", "UI/UX Design", "Landing Pages"]
-  }
+    categories: ["Web Development", "Landing Pages"]
+  },
+  {
+    title: "Valentine Fun",
+    imageUrl: "/images/valentine.png",
+    link: "https://valentine-fun-three.vercel.app/",
+    description: "A valentine fun page with impossible button",
+    categories: ["Web Development", "Landing Pages"]
+  },
+  {
+    title: "Travelogue app",
+    imageUrl: "/images/travelogue.png",
+    link: "https://rinos-travelogue-gallery-app.vercel.app",
+    description: "A travelogue app that shows images",
+    categories: ["Web Development", "Landing Pages"]
+  },
+  {
+    title: "Simple Loan Calculator",
+    imageUrl: "/images/loanCalc.png",
+    link: "https://simple-loan-calculator-kappa.vercel.app/",
+    description: "A simple loan calculator",
+    categories: ["Web Development", "Landing Pages"]
+  },
+  // {
+  //   title: "Covid-19 Tracker App",
+  //   imageUrl: "/images/finalspace.png",
+  //   link: "https://covid-19-application.vercel.app/",
+  //   description: "A covid-19 tracker app that shows the covid-19 statistics of a country",
+  //   categories: ["Web Development", "Landing Pages"]
+  // },
 ];
 
 
@@ -49,7 +77,6 @@ function WorksCard() {
     'Web Development',
     'UI/UX Design',
     'Landing Pages',
-    'Graphic Design'
   ];
 
   const filteredItems = works.filter(item => item.categories.includes(activeFilter));
@@ -59,7 +86,7 @@ function WorksCard() {
       <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 mt-22 max-md:max-w-full">
         <h2 className="text-3xl mb-4">Works</h2>
         <p className="text-neutral-50 text-2xl mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          All my works across all industries I have ever been to. <br />You can find various of projects here.
+          All my works across all industries I engage in. <br />You can find various projects and some of my fun learning experiments here.
         </p>
 
         {/* Filters */}
