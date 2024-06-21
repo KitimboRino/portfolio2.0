@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import FilterButton from './FilterButton';
 
 // JSON data for contact links
@@ -105,23 +106,27 @@ function WorksCard() {
         <div className="flex flex-wrap">
           {filteredItems.map((item, index) => (
             <div key={index} className="w-full sm:w-1/2 lg:w-1/4 p-2 ">
-              <div className="bg-gray-800 rounded-lg overflow-hidden">
-                <Image
-                  src={item.imageUrl}
-                  alt={item.title}
-                  placeholder='blur'
-                  blurDataURL='/images/logo.png'
-                  width={400}
-                  height={400}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out" />
-                <div className="p-4">
-                  <h3 className="text-xl text-neutral-50 mb-2">{item.title}</h3>
-                  <p className="text-gray-400">{item.description}</p>
-                  <div className="inline-block mt-2 bg-gray-700 text-sm text-zinc-50 text-opacity-60 py-1 px-3 rounded">
-                    {item.categories.join(', ')}
+              <Link href={item.link} passHref target="_blank" rel='noopener noreferrer'>
+
+                <div className="bg-gray-800 rounded-lg overflow-hidden">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    placeholder='blur'
+                    blurDataURL='/images/logo.png'
+                    width={400}
+                    height={400}
+                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out" />
+                  <div className="p-4">
+                    <h3 className="text-xl text-neutral-50 mb-2">{item.title}</h3>
+                    <p className="text-gray-400">{item.description}</p>
+                    <div className="inline-block mt-2 bg-gray-700 text-sm text-zinc-50 text-opacity-60 py-1 px-3 rounded">
+                      {item.categories.join(', ')}
+                    </div>
                   </div>
                 </div>
-              </div>
+
+              </Link>
             </div>
           ))}
         </div>
