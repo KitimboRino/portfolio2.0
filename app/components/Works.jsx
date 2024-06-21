@@ -117,7 +117,7 @@ function WorksCard() {
                 <div className="p-4">
                   <h3 className="text-xl text-neutral-50 mb-2">{item.title}</h3>
                   <p className="text-gray-400">{item.description}</p>
-                  <div className="inline-block mt-2 bg-gray-700 text-sm py-1 px-3 rounded">
+                  <div className="inline-block mt-2 bg-gray-700 text-sm text-zinc-50 text-opacity-60 py-1 px-3 rounded">
                     {item.categories.join(', ')}
                   </div>
                 </div>
