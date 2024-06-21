@@ -40,7 +40,7 @@ function Header() {
             role="navigation"
           >
             <div className="flex w-full grow shrink-0 basis-auto justify-between gap-5 flex-wrap">
-              <Link href="/" className="max-w-full justify-center items-center bg-white self-stretch flex w-[66px] flex-col px-5 py-1 rounded-xl">
+              <Link href="/" className="max-w-full justify-center items-center bg-white self-stretch flex w-[66px] flex-col px-5 py-1 rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out">
                 <Image
                   loading="lazy"
                   src="/images/logo.png"
@@ -51,28 +51,28 @@ function Header() {
               </Link>
               {/* Use md:flex to show on medium and larger screens, hidden on small screens */}
               <div className="flex justify-center items-center gap-2.5 my-auto hidden md:flex">
-                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[67px] max-w-full flex-col rounded-[3.75rem] transition ease-in-out duration-300">
+                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[67px] max-w-full flex-col rounded-[3.75rem] hover:scale-105 transition-transform duration-300 ease-in-out">
                   <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid">
                     <Link href="/about">
                       About
                     </Link>
                   </div>
                 </div>
-                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[68px] max-w-full flex-col rounded-[3.75rem] transition ease-in-out duration-300">
+                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-[68px] max-w-full flex-col rounded-[3.75rem] hover:scale-105 transition-transform duration-300 ease-in-out">
                   <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
                     <Link href="/works">
                       Works
                     </Link>
                   </div>
                 </div>
-                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-14 max-w-full flex-col rounded-[3.75rem] transition ease-in-out duration-300">
+                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-14 max-w-full flex-col rounded-[3.75rem] hover:scale-105 transition-transform duration-300 ease-in-out">
                   <div className="text-white text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow px-3 py-1 rounded-[3.75rem] border-solid">
                     <Link href="/blog">
                       Blog
                     </Link>
                   </div>
                 </div>
-                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-20 max-w-full flex-col rounded-[3.75rem] transition ease-in-out duration-300">
+                <div className="justify-center items-center bg-neutral-900 bg-opacity-10 self-stretch flex w-20 max-w-full flex-col rounded-[3.75rem] hover:scale-105 transition-transform duration-300 ease-in-out">
                   <div className="text-neutral-50 text-base leading-[120%] self-stretch border border-[color:var(--madiyour-com-nero-10,rgba(255,255,255,0.10))] w-full grow pl-3 pr-3 py-1 rounded-[3.75rem] border-solid">
                     <Link href="/contact">
                       Contact
