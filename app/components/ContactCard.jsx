@@ -55,7 +55,7 @@ const contactLinks = [
 
 function ContactCard() {
   return (
-    <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
+    <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
       <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
         <h2 className="text-3xl text-neutral-50 mb-4">Ways to Reach out to me</h2>
         <p className="text-neutral-50 text-2xl mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -73,7 +73,7 @@ function ContactCard() {
         <div className="flex flex-row items-start justify-start self-start space-x-4">
           {contactLinks.map((link, index) => (
             <a key={index} href={link.href} target="_blank" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center self-start flex max-w-full flex-col my-auto rounded-xl mt-4">
-              <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
+              <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
                 {link.isImage ? (
                   <Image
                     loading="lazy"

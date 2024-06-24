@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const PhotoCard = () => {
     return (
-        <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
+        <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
             <div className="max-w-[1258px] self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
                 <div className="text-center mb-4">
                     <h2 className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-1 max-md:max-w-full mt-1">Photography</h2>

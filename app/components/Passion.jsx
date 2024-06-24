@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Passion = () => {
     return (
-        <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
+        <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
             <div className="max-w-[1258px] self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
                 <div className="text-left mb-4">
                     <h3 className="text-neutral-50 text-3xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full mb-3">

@@ -45,7 +45,7 @@ const contactLinks = [
 
 function AboutHeroSection() {
   return (
-    <main className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch rounded-3xl border-solid">
+    <main className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch rounded-3xl border-solid">
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/img.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
           <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-22 max-md:max-w-full max-md:mt-10">
@@ -61,7 +61,7 @@ function AboutHeroSection() {
           <div className="flex flex-row items-start justify-start self-start space-x-4">
             {contactLinks.map((link, index) => (
               <a key={index} href={link.href} target="_blank" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center self-start flex max-w-full flex-col my-auto rounded-xl mt-4">
-                <div className="border border-[color:var(--madiyour-com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
+                <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
                   {link.isImage ? (
                     <Image
                       loading="lazy"

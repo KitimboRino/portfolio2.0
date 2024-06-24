@@ -53,7 +53,7 @@ const softwareTools = [
 
 function AboutSection() {
   return (
-    <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
+    <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
       <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
         <div className="max-w-[81rem] items-start self-stretch flex flex-col max-md:max-w-full">
           <div className="justify-center items-center flex w-[258px] max-w-full flex-col self-start">
@@ -72,7 +72,7 @@ function AboutSection() {
         <div className="max-w-[78rem] items-start self-stretch flex gap-2.5 mt-9 mx-2.5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
           {softwareTools.map((tool, index) => (
             <div key={index} className="justify-center items-center self-stretch flex flex-col w-[104px] rounded-lg ">
-              <div className="border border-[color:var(--madiyour-com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
+              <div className="border border-[color:var(--com-mine-shaft,#222)] self-stretch flex w-full grow flex-col pt-5 pb-2.5 px-5 rounded-lg border-solid">
                 <Image
                   loading="lazy"
                   src={tool.imageUrl}
@@ -99,7 +99,7 @@ function AboutSection() {
         </div>
 
         <div className="justify-center items-center flex w-[137px] max-w-full grow flex-col mt-20 rounded-[3.125rem] self-end max-md:mt-10">
-          <Link href="/about" className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--madiyour-com-alabaster,#FAFAFA)] w-full grow pl-3 pr-3 py-2 rounded-[3.125rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
+          <Link href="/about" className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--com-alabaster,#FAFAFA)] w-full grow pl-3 pr-3 py-2 rounded-[3.125rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
             More about me
           </Link>
         </div>

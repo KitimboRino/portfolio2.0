@@ -26,7 +26,7 @@ const worksData = [
 
 function Footer() {
     return (
-        <section className="border border-[color:var(--madiyour-com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
+        <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
             <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
                 <div className="items-start flex w-[198px] max-w-full flex-col self-start">
                     <h2 className="text-neutral-50 text-lg font-light leading-[120%] self-stretch">
@@ -63,7 +63,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="justify-center items-center flex w-[62px] max-w-full grow flex-col mt-6 rounded-[3.125rem] self-end">
-                    <Link href="/works" className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--madiyour-com-alabaster,#FAFAFA)] w-full grow pl-3 pr-3 py-2 rounded-[3.125rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <Link href="/works" className="text-neutral-50 text-right text-base font-light leading-[120%] self-stretch border border-[color:var(--com-alabaster,#FAFAFA)] w-full grow pl-3 pr-3 py-2 rounded-[3.125rem] border-solid hover:scale-105 transition-transform duration-300 ease-in-out">
                         More
                     </Link>
                 </div>
