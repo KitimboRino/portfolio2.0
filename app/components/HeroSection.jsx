@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
+import { IoDownloadOutline } from "react-icons/io5";
 
 const latestWorks = [
   {
@@ -29,7 +30,9 @@ function HeroSection() {
           <div className="justify-center items-center bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
             <Link href="/Rino_Kitimbo_Resume.pdf" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
               <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-2 pb-8 px-8 rounded-xl border-solid max-md:px-5">
-                <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl"> + </h1>
+                <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl">
+                  <IoDownloadOutline className="aspect-square text-neutral-50 object-center w-[20px] justify-center items-center"/>
+                </h1>
                 <p className="text-neutral-50 text-sm font-light leading-[140%] self-stretch">Download my resume</p>
               </div>
             </Link>
@@ -60,7 +63,7 @@ function HeroSection() {
           </div>
         </section>
         <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10">
-          <h2 className="text-neutral-50 text-5xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full"> Front End Dev Designing/ developing UIs for web, mobile, applications and interactive apps </h2>
+          <h2 className="text-neutral-50 text-5xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full"> Front End Engineer Designing/ developing UIs for web, mobile, applications and interactive apps </h2>
           <p className="text-neutral-50 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full"> I design and develop experiences that <br /> make peoples lives simple. </p>
         </section>
       </div>
