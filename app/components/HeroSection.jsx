@@ -29,7 +29,7 @@ function HeroSection() {
         <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5" >
           <div className="justify-center items-center bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">
             <Link href="/Rino_Kitimbo_Resume.pdf" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center bg-zinc-50 bg-opacity-30 self-stretch flex w-[149px] max-w-full flex-col rounded-xl">
-              <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-2 pb-8 px-8 rounded-xl border-solid max-md:px-5">
+              <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full grow flex-col pt-1 pb-4 px-4 rounded-xl border-solid max-md:px-5">
                 <h1 className="text-neutral-50 text-6xl font-thin leading-[140%] self-center max-md:text-4xl">
                   <IoDownloadOutline className="aspect-square text-neutral-50 object-center w-[20px] justify-center items-center"/>
                 </h1>
