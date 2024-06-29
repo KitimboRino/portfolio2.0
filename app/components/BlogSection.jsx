@@ -24,10 +24,19 @@ const latestWorks = [
 function BlogSection() {
   return (
     <main className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch  rounded-3xl border-solid">
-      <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5" style={{ backgroundImage: 'url("/images/hero.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <section className="max-w-[1252px] items-start self-center flex w-full flex-col mt-16 max-md:max-w-full max-md:mt-10">
+      <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
+        <Image
+          src="/images/hero.jpg"
+          alt="Hero background"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          quality={100}
+          className="z-0"
+        />
+        <section className="max-w-[1252px] items-start self-center flex w-full flex-col mt-16 max-md:max-w-full max-md:mt-10 relative z-10">
           <div className="items-start flex max-w-full flex-col self-start">
-            <h2 className="text-neutral-50 text-5xl font-light leading-[120%] self-stretch">      
+            <h2 className="text-neutral-50 text-5xl font-light leading-[120%] self-stretch">
               Blog
             </h2>
             <p className="text-neutral-50 text-2xl font-light leading-[140%] self-stretch">
