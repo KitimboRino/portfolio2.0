@@ -33,7 +33,7 @@ function HeroSection() {
         objectFit="cover"
         objectPosition="center"
         quality={100}
-        className="z-0"
+        className="z-0 rounded-t-3xl"
       />
       <section className="flex w-[634px] max-w-full flex-col mr-40 self-end max-md:mr-2.5 relative z-10">
         <div className="justify-center items-center bg-opacity-30 self-center flex w-[142px] max-w-full flex-col rounded-xl">

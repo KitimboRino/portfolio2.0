@@ -54,7 +54,7 @@ function AboutHeroSection() {
           objectFit="cover"
           objectPosition="center"
           quality={100}
-          className="z-0"
+          className="z-0 rounded-3xl"
         />
         <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full relative z-10">
           <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-22 max-md:max-w-full max-md:mt-10">
