@@ -51,7 +51,7 @@ const ContactForm = () => {
                 <div className="flex flex-row justify-between bg-gray-800 text-white p-6 rounded-md w-full">
                     <div>
                         <div className="mb-4">
-                            <p className="text-neutral-50 text-lg font-light ">Got a project in mind?</p>
+                            <p className="text-neutral-50 text-lg font-light ">Got a project in mind or want to hire me?</p>
                             <p className="text-zinc-50 text-opacity-60 text-base">Reach out and let&apos;s make it happen!</p>
                         </div>
                         <div className="flex items-center">
