@@ -71,16 +71,16 @@ function AboutHeroSection() {
               World Merit Org, Dec 2022 - Present
             </p>
           </section>
-          <div className="flex flex-row items-start justify-start self-start space-x-4">
+          <div className="flex flex-wrap justify-center mt-2 md:justify-start space-x-3 md:space-x-3">
             {contactLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center self-start flex max-w-full flex-col my-auto rounded-xl mt-4"
+                className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center flex flex-col my-auto rounded-xl mb-4 md:mb-0"
               >
-                <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
+                <div className="border border-[rgba(250,250,250,0.29)] flex w-full items-start justify-between gap-1.5 p-1.5 rounded-xl">
                   {link.isImage ? (
                     <Image
                       loading="lazy"
@@ -92,7 +92,7 @@ function AboutHeroSection() {
                   ) : (
                     <>
                       {link.icon}
-                      <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch">
+                      <p className="text-neutral-50 text-sm font-light leading-[120%]">
                         {link.label}
                       </p>
                     </>
