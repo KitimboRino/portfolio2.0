@@ -46,21 +46,21 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
 
     return (
-        <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-20 py-16 mt-4 rounded-3xl border-solid max-md:max-w-full max-md:px-5">
-            <div className="max-w-[1258px] items-start self-center flex w-full flex-col pr-1.5 max-md:max-w-full">
-                <div className="flex flex-row justify-between bg-gray-800 text-white p-6 rounded-md w-full">
-                    <div>
+        <section className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch bg-neutral-900 flex grow flex-col px-4 py-8 mt-4 rounded-3xl md:px-20 md:py-16 max-md:max-w-full">
+            <div className="max-w-[1258px] items-start self-center flex w-full flex-col md:pr-1.5 max-md:max-w-full">
+                <div className="flex flex-col md:flex-row justify-between bg-gray-800 text-white p-6 rounded-md w-full">
+                    <div className="mb-4 md:mb-0">
                         <div className="mb-4">
-                            <p className="text-neutral-50 text-lg font-light ">Got a project in mind or want to hire me?</p>
+                            <p className="text-neutral-50 text-lg font-light">Got a project in mind or want to hire me?</p>
                             <p className="text-zinc-50 text-opacity-60 text-base">Reach out and let&apos;s make it happen!</p>
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex flex-col md:flex-row items-center">
                             <input
                                 type="email"
                                 placeholder="youremail@gmail.com"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="bg-gray-300 text-black p-2 rounded-md flex-1 mr-4 text-zinc-50 text-opacity-60 text-base"
+                                className="bg-gray-300 text-black p-2 rounded-md flex-1 mb-4 md:mb-0 md:mr-4 text-zinc-50 text-opacity-60 text-base"
                             />
                             <button className="bg-red-500 text-white p-2 rounded-md hover:bg-red-600">
                                 <a
@@ -86,14 +86,14 @@ const ContactForm = () => {
                         </div>
                     </div>
 
-                    <div className="flex space-x-3">
+                    <div className="flex flex-wrap justify-center md:justify-start space-x-3 md:space-x-3">
                         {contactLinks.map((link, index) => (
                             <a
                                 key={index}
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center flex flex-col my-auto rounded-xl"
+                                className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center flex flex-col my-auto rounded-xl mb-4 md:mb-0"
                             >
                                 <div className="border border-[rgba(250,250,250,0.29)] flex w-full items-start justify-between gap-1.5 p-1.5 rounded-xl">
                                     {link.isImage ? (
