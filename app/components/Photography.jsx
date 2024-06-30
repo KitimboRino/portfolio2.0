@@ -17,6 +17,7 @@ const PhotoCard = () => {
                         className="rounded-xl"
                         placeholder='blur'
                         blurDataURL='/images/logo.png'
+                        alt='A photo of a flower'
                     />
                 </div>
                 <div className="text-center">
