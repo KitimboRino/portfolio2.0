@@ -65,7 +65,7 @@ function AboutHeroSection() {
               interactive apps.
             </h2>
             <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6">
-              Front End Engineer | UI/UX Designer <br /> Designer at World Merit Org.
+              Front End Engineer | UI/UX Designer <br /> at World Merit Org.
             </p>
             <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6">
               World Merit Org, Dec 2022 - Present
