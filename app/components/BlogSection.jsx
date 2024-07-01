@@ -26,7 +26,7 @@ function BlogSection() {
     <main className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch  rounded-3xl border-solid">
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
         <Image
-          src="/images/hero.jpg"
+          src="/images/hero.jpeg"
           alt="Hero background"
           layout="fill"
           objectFit="cover"
