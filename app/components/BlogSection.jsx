@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import { IoMailOutline } from "react-icons/io5";
 import FilterButton from './FilterButton';
 
 
@@ -11,14 +10,14 @@ const articles = [
     title: "Unveiling the Journey: What Happens When You Type https://www.google.com and Hit Enter?",
     imageUrl: "/images/google.png",
     link: "https://medium.com/@kitimborinoemma0580/unveiling-the-journey-what-happens-when-you-type-https-www-google-com-and-hit-enter-9057b6e688e9",
-    categories: ['Tech','Study']
+    categories: ['Tech', 'Study']
   },
   {
     title: 'Defensive programming',
     imageUrl: '/images/defense.png',
     link: 'https://medium.com/@kitimborinoemma0580/defensive-programming-451ea505bb62',
     description: 'A website for a tech start-up company.',
-    categories: ['Tech','Study']
+    categories: ['Tech', 'Study']
   },
   {
     title: "The Authentication Adventure: Unraveling the Mystery Behind the Great Login Lockout",
@@ -71,7 +70,7 @@ function BlogSection() {
               Articles
             </h2>
             <p className="text-neutral-50 text-2xl font-light leading-[140%] self-stretch">
-              Filter articles with interested topics.
+              Filter articles by interested topics.
             </p>
           </div>
           {/* Filters */}
@@ -88,31 +87,37 @@ function BlogSection() {
 
 
           {/* Articles */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
-            {filteredItems.map((item, index) => (
-              <div key={index} className="p-2">
-                <Link href={item.link} passHref target="_blank" rel="noopener noreferrer">
-                  <div className="rounded-lg overflow-hidden">
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.title}
-                      placeholder="blur"bg-gray-800 
-                      blurDataURL="/images/logo.png"
-                      width={400}
-                      height={400}
-                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg"
-                    />
-                    <div className="p-4">
-                      <h3 className="text-xl text-neutral-50 mb-2 text-ellipsis overflow-hidden whitespace-nowrap">{item.title}</h3>
-                      <div className="inline-block mt-2 bg-gray-700 text-sm text-zinc-50 text-opacity-60 py-1 px-3 rounded">
-                        {item.categories.join(', ')}
+          {filteredItems.length === 0 ? (
+            <div className="text-center text-neutral-50 my-4">
+              I will be adding some soon 
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
+              {filteredItems.map((item, index) => (
+                <div key={index} className="p-2">
+                  <Link href={item.link} passHref target="_blank" rel="noopener noreferrer">
+                    <div className="rounded-lg overflow-hidden">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.title}
+                        placeholder="blur"
+                        blurDataURL="/images/logo.png"
+                        width={400}
+                        height={400}
+                        className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg"
+                      />
+                      <div className="p-4">
+                        <h3 className="text-xl text-neutral-50 mb-2 text-ellipsis overflow-hidden whitespace-nowrap">{item.title}</h3>
+                        <div className="inline-block mt-2 bg-gray-700 text-sm text-zinc-50 text-opacity-60 py-1 px-3 rounded">
+                          {item.categories.join(', ')}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
       </div>
     </main>
