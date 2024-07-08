@@ -6,7 +6,7 @@ const FilterButton = ({ label, active, onClick }) => {
     return (
         <button
             className={`${active ? 'bg-red-500 text-white' : 'bg-gray-700 text-gray-300'
-                } py-2 px-4 rounded-full focus:outline-none`}
+                } py-1 px-4 rounded-xl focus:outline-none hover:scale-105 transition-transform duration-300 ease-in-out`}
             onClick={onClick}
         >
             {label}

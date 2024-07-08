@@ -1,27 +1,46 @@
-import React from 'react'
+'use client';
+import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
+import FilterButton from './FilterButton';
 
-const latestWorks = [
+
+const articles = [
   {
-    title: "Gestures Ug website",
-    imageUrl: "/images/Gestures.png",
-    link: "https://gestures-ug.com"
+    title: "Unveiling the Journey: What Happens When You Type https://www.google.com and Hit Enter?",
+    imageUrl: "/images/google.png",
+    link: "https://medium.com/@kitimborinoemma0580/unveiling-the-journey-what-happens-when-you-type-https-www-google-com-and-hit-enter-9057b6e688e9",
+    categories: ['Tech','Study']
   },
   {
-    title: "Sentinel Digital Tech Website",
-    imageUrl: "/images/SDT.png",
-    link: "https://sentineldigitaltechnologies.com"
+    title: 'Defensive programming',
+    imageUrl: '/images/defense.png',
+    link: 'https://medium.com/@kitimborinoemma0580/defensive-programming-451ea505bb62',
+    description: 'A website for a tech start-up company.',
+    categories: ['Tech','Study']
   },
   {
-    title: "World Merit Platform",
-    imageUrl: "/images/WorldMerit.png",
-    link: "https://worldmerit.org"
-  }
+    title: "The Authentication Adventure: Unraveling the Mystery Behind the Great Login Lockout",
+    imageUrl: "/images/authblog.png",
+    link: "https://medium.com/@kitimborinoemma0580/the-authentication-adventure-unraveling-the-mystery-behind-the-great-login-lockout-75fc8e83ecf3",
+    categories: ['Tech']
+  },
 ];
 
 function BlogSection() {
+  const [activeFilter, setActiveFilter] = useState('Tech');
+  const filters = [
+    'Tech',
+    'Study',
+    'UI/UX',
+    'Travel',
+    'Freelancing',
+    'Random',
+    'Golf'
+  ];
+
+  const filteredItems = articles.filter(item => item.categories.includes(activeFilter));
   return (
     <main className="border border-[color:var(--com-mine-shaft,#2E2E2E)] self-stretch  rounded-3xl border-solid">
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pt-44 pb-8 rounded-t-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
@@ -54,6 +73,45 @@ function BlogSection() {
             <p className="text-neutral-50 text-2xl font-light leading-[140%] self-stretch">
               Filter articles with interested topics.
             </p>
+          </div>
+          {/* Filters */}
+          <div className="flex flex-wrap gap-2 my-4">
+            {filters.map((filter, index) => (
+              <FilterButton
+                key={index}
+                label={filter}
+                active={filter === activeFilter}
+                onClick={() => setActiveFilter(filter)}
+              />
+            ))}
+          </div>
+
+
+          {/* Articles */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
+            {filteredItems.map((item, index) => (
+              <div key={index} className="p-2">
+                <Link href={item.link} passHref target="_blank" rel="noopener noreferrer">
+                  <div className="rounded-lg overflow-hidden">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.title}
+                      placeholder="blur"bg-gray-800 
+                      blurDataURL="/images/logo.png"
+                      width={400}
+                      height={400}
+                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-xl text-neutral-50 mb-2 text-ellipsis overflow-hidden whitespace-nowrap">{item.title}</h3>
+                      <div className="inline-block mt-2 bg-gray-700 text-sm text-zinc-50 text-opacity-60 py-1 px-3 rounded">
+                        {item.categories.join(', ')}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </section>
       </div>
