@@ -15,40 +15,30 @@ const contactLinks = [
     href: 'https://github.com/KitimboRino',
     imageUrl: '/images/github.png',
     alt: 'GitHub Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://www.linkedin.com/in/rino-kitimbo-881090116/',
     imageUrl: '/images/linkedin.png',
     alt: 'LinkedIn Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://www.instagram.com/life_of_kred/',
     imageUrl: '/images/instagram.png',
     alt: 'Instagram Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://twitter.com/RiNO_KED',
     imageUrl: '/images/twitter.png',
     alt: 'Twitter Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
   {
     href: 'https://wa.me/+256706144964',
     imageUrl: '/images/whatsapp.png',
     alt: 'WhatsApp Logo',
-    width: 20,
-    height: 20,
     isImage: true,
   },
 ];
@@ -70,28 +60,36 @@ function ContactCard() {
           </p>
         </div>
 
-        <div className="flex flex-row items-start justify-start self-start space-x-4">
-          {contactLinks.map((link, index) => (
-            <a key={index} href={link.href} target="_blank" className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center self-start flex max-w-full flex-col my-auto rounded-xl mt-4">
-              <div className="border border-[color:var(--com-alabaster-29,rgba(250,250,250,0.29))] self-stretch flex w-full items-start justify-between gap-1.5 pl-1.5 pr-1.5 py-1.5 rounded-xl border-solid">
-                {link.isImage ? (
-                  <Image
-                    loading="lazy"
-                    src={link.imageUrl}
-                    alt={link.alt}
-                    width={link.width}
-                    height={link.height}
-                  />
-                ) : (
-                  <>
-                    {link.icon}
-                    <p className="text-neutral-50 text-sm font-light leading-[120%] self-stretch">{link.label}</p>
-                  </>
-                )}
-              </div>
-            </a>
-          ))}
-        </div>
+        <div className="flex flex-wrap justify-center mt-2 md:justify-start space-x-3 md:space-x-3">
+            {contactLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-105 transition-transform duration-300 ease-in-out justify-center items-center flex flex-col my-auto rounded-xl mb-4 md:mb-0"
+              >
+                <div className="border border-[rgba(250,250,250,0.29)] flex w-full items-start justify-between gap-1.5 p-1.5 rounded-xl">
+                  {link.isImage ? (
+                    <Image
+                      loading="lazy"
+                      src={link.imageUrl}
+                      alt={link.alt}
+                      width={20}
+                      height={20}
+                    />
+                  ) : (
+                    <>
+                      {link.icon}
+                      <p className="text-neutral-50 text-sm font-light leading-[120%]">
+                        {link.label}
+                      </p>
+                    </>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
       </div>
     </section>
   );
