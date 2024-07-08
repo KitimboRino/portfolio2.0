@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions'
 import Image from 'next/image';
 
 function Header() {

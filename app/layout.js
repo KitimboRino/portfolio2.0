@@ -6,26 +6,28 @@ import ContactForm from './components/ContactForm'
 import Copyright from './components/Copyright'
 import Script from 'next/script'
 import { usePathname } from 'next/navigation'
+import { ViewTransitions } from 'next-view-transitions'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   return (
-    <html lang="en">
-      <body>
-        <div className="items-start bg-neutral-900 flex flex-col">
-          <div className="items-center bg-neutral-900 self-stretch flex w-full flex-col max-md:max-w-full">
-            <div className="bg-[radial-gradient(70.71%_50.71%_at_50%_50%,rgba(255,0,0,0.59)_0%,rgba(0,0,0,0.00)_100%)] self-stretch flex w-full flex-col pt-6 pb-11 px-5 max-md:max-w-full">
-              <Header />
-              {children}
-              {pathname !== '/contact' && <ContactForm />}
-              <Copyright />
+    <ViewTransitions>
+      <html lang="en">
+        <body>
+          <div className="items-start bg-neutral-900 flex flex-col">
+            <div className="items-center bg-neutral-900 self-stretch flex w-full flex-col max-md:max-w-full">
+              <div className="bg-[radial-gradient(70.71%_50.71%_at_50%_50%,rgba(255,0,0,0.59)_0%,rgba(0,0,0,0.00)_100%)] self-stretch flex w-full flex-col pt-6 pb-11 px-5 max-md:max-w-full">
+                <Header />
+                {children}
+                {pathname !== '/contact' && <ContactForm />}
+                <Copyright />
+              </div>
             </div>
           </div>
-        </div>
-        <Script id="custom-script" strategy="afterInteractive">
-          {`
+          <Script id="custom-script" strategy="afterInteractive">
+            {`
             <!-- Start of Async Drift Code -->
               "use strict";
 
@@ -53,8 +55,9 @@ export default function RootLayout({ children }) {
               drift.load('vnrkdgzim6ut');
               <!-- End of Async Drift Code -->
           `}
-        </Script>
-      </body>
-    </html>
+          </Script>
+        </body>
+      </html>
+    </ViewTransitions>
   )
 }
