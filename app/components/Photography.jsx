@@ -11,7 +11,7 @@ const PhotoCard = () => {
                 </div>
                 <div className="relative w-full h-64 md:h-96 mb-4">
                     <Image
-                        src="/images/flowe.jpg"
+                        src="/images/summit.jpeg"
                         layout="fill"
                         objectFit="cover"
                         className="rounded-xl"
