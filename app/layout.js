@@ -7,6 +7,7 @@ import Copyright from './components/Copyright'
 import Script from 'next/script'
 import { usePathname } from 'next/navigation'
 import { ViewTransitions } from 'next-view-transitions'
+import TitleChangeComponent from "./utils/meta";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <ViewTransitions>
       <html lang="en">
+      <TitleChangeComponent />
         <body>
           <div className="items-start bg-neutral-900 flex flex-col">
             <div className="items-center bg-neutral-900 self-stretch flex w-full flex-col max-md:max-w-full">
