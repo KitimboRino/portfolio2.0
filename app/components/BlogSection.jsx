@@ -25,6 +25,12 @@ const articles = [
     link: "https://medium.com/@kitimborinoemma0580/the-authentication-adventure-unraveling-the-mystery-behind-the-great-login-lockout-75fc8e83ecf3",
     categories: ['Tech']
   },
+  {
+    title: "How to Learn, unlearn and Relearn",
+    imageUrl: "/images/logo.png",
+    link: "https://medium.com/@kitimborinoemma0580/how-to-learn-unlearn-and-relearn-c2101073bbe1",
+    categories: ['Tech','Study']
+  },
 ];
 
 function BlogSection() {
