@@ -7,6 +7,20 @@ import FilterButton from './FilterButton';
 // JSON data for contact links
 const works = [
   {
+    title: "LabX Scientific website",
+    imageUrl: "/images/labx.png",
+    link: "https://labxscientific.com",
+    description: "A website for a company that deals in supplying scientific and manufucturing equipment",
+    categories: ["UI/UX Design", "Landing Pages"]
+  },
+  {
+    title: "Medi-Rafiki Platform",
+    imageUrl: "/images/medi-rafiki.png",
+    link: "https://medi-rafiki.vercel.app/",
+    description: "A platform for making doctor appointments",
+    categories: ["UI/UX Design", "Web Development"]
+  },
+  {
     title: "Gestures Ug website",
     imageUrl: "/images/Gestures.png",
     link: "https://gestures-ug.com",
@@ -62,13 +76,6 @@ const works = [
     description: "A simple loan calculator",
     categories: ["Web Development", "Landing Pages"]
   },
-  // {
-  //   title: "Covid-19 Tracker App",
-  //   imageUrl: "/images/finalspace.png",
-  //   link: "https://covid-19-application.vercel.app/",
-  //   description: "A covid-19 tracker app that shows the covid-19 statistics of a country",
-  //   categories: ["Web Development", "Landing Pages"]
-  // },
 ];
 
 
