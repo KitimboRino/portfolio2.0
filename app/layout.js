@@ -1,4 +1,6 @@
 'use client'
+import React, { useEffect } from "react";
+import Lenis from 'lenis';
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
@@ -12,11 +14,30 @@ import TitleChangeComponent from "./utils/meta";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    })
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy()
+    }
+  },
+    []);
+
   const pathname = usePathname();
+  
   return (
     <ViewTransitions>
       <html lang="en">
-      <TitleChangeComponent />
+        <TitleChangeComponent />
         <body>
           <div className="items-start bg-neutral-900 flex flex-col">
             <div className="items-center bg-neutral-900 self-stretch flex w-full flex-col max-md:max-w-full">
