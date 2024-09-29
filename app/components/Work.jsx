@@ -1,37 +1,7 @@
 import React from 'react';
 
-const workExperiences = [
-  {
-    organization: 'World Merit Org',
-    role: 'Front End Engineer',
-    startYear: 2022,
-    endYear: 'Present',
-  },
-  {
-    organization: 'Sentinel Digital Technologies',
-    role: 'Software Engineer',
-    startYear: 2023,
-    endYear: 'Present',
-  },
-  {
-    organization: 'Guild Digital',
-    role: 'Software Engineer',
-    startYear: 2022,
-    endYear: 2023,
-  },
-  {
-    organization: 'Project Code Ug',
-    role: 'Full Stack Engineer',
-    startYear: 2021,
-    endYear: 2022,
-  },
-  {
-    organization: 'Refactory Uganda',
-    role: 'Peer Mentor',
-    startYear: 2020,
-    endYear: 'Present',
-  },
-];
+import { workExperiences } from '@/constants/index';
+
 
 const WorkExperienceCard = () => {
   return (

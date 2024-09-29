@@ -1,54 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-
-const stackItems = [
-    {
-        name: 'Figma',
-        imageUrl: '/images/figma.png',
-        alt: 'Figma Logo'
-    },
-    {
-        name: 'ReactJS',
-        imageUrl: '/images/react.png',
-        alt: 'ReactJS Logo'
-    },
-    {
-        name: 'NextJS',
-        imageUrl: '/images/nextjs.png',
-        alt: 'NextJS Logo'
-    },
-    {
-        name: 'NodeJS',
-        imageUrl: '/images/nodejs.png',
-        alt: 'NodeJS Logo'
-    },
-    {
-        name: 'Framer',
-        imageUrl: '/images/framer.png',
-        alt: 'Framer Logo'
-    },
-    {
-        name: 'WordPress',
-        imageUrl: '/images/wp.png',
-        alt: 'WordPress Logo'
-    },
-    {
-        name: 'JavaScript',
-        imageUrl: '/images/javascript.png',
-        alt: 'JavaScript Logo'
-    },
-    {
-        name: 'Flask',
-        imageUrl: '/images/flask.png',
-        alt: 'Flask Logo'
-    },
-    {
-        name: 'Python',
-        imageUrl: '/images/python.png',
-        alt: 'Python Logo'
-    },
-];
+import {stackItems} from '@/constants/index';
 
 const SetupCard = () => {
     return (

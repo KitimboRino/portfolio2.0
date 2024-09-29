@@ -3,29 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
 import { IoDownloadOutline } from "react-icons/io5";
-
-const latestWorks = [
-  {
-    title: "LabX Scientific website",
-    imageUrl: "/images/labx.png",
-    link: "https://labxscientific.com",
-  },
-  {
-    title: "Medi-Rafiki Platform",
-    imageUrl: "/images/medi-rafiki.png",
-    link: "https://medi-rafiki.vercel.app/",
-  },
-  {
-    title: "Gestures Ug website",
-    imageUrl: "/images/Gestures.png",
-    link: "https://gestures-ug.com"
-  },
-  {
-    title: "World Merit Platform",
-    imageUrl: "/images/WorldMerit.png",
-    link: "https://worldmerit.org"
-  }
-];
+import {latestWorks} from '@/constants/index'
 
 function HeroSection() {
   return (

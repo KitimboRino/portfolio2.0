@@ -1,37 +1,5 @@
 import React from 'react';
-
-const education = [
-    {
-        institution: 'ALX',
-        course: 'Software Engineering',
-        startYear: 2023,
-        endYear: 'Present',
-    },
-    {
-        institution: 'Refactory Academy',
-        course: 'Certificate in Software Engineering',
-        startYear: 2020,
-        endYear: 2022,
-    },
-    {
-        institution: 'Kyambogo University',
-        course: 'BSC in Chemical Engineering',
-        startYear: 2014,
-        endYear: 2018,
-    },
-    {
-        institution: 'Jinja Senior Secondary School',
-        course: 'Advanced Level Certificate',
-        startYear: 2014,
-        endYear: 2018,
-    },
-    {
-        institution: 'Jinja Senior Secondary School',
-        course: 'Ordinary Level Certificate',
-        startYear: 2014,
-        endYear: 2018,
-    },
-];
+import {education} from '@/constants/index'
 
 const EducationCard = () => {
     return (

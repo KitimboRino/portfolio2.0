@@ -1,46 +1,6 @@
 import React from 'react';
 
-const mySkills = [
-  {
-    skill: 'UI/ UX Design',
-  },
-  {
-    skill: 'Research',
-  },
-  {
-    skill: 'Problem Solving',
-  },
-  {
-    skill: 'Debugging',
-  },
-  {
-    skill: 'Software testing',
-  },
-  {
-    skill: 'Collaboration',
-  },
-  {
-    skill: 'Communication',
-  },
-  {
-    skill: 'Presentation',
-  },
-  {
-    skill: 'Version Control Systems',
-  },
-  {
-    skill: 'Web Development',
-  },
-  {
-    skill: 'Security Best Practices',
-  },
-  {
-    skill: 'Project Management Tools',
-  },
-  {
-    skill: 'Continuous Integration/Continuous Deployment (CI/CD)',
-  },
-];
+import { mySkills } from '@/constants/index';
 
 const SkillsCard = () => {
   return (

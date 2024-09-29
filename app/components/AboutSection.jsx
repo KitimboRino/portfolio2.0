@@ -2,54 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// JSON data for software tools
-const softwareTools = [
-  {
-    name: 'Framer',
-    imageUrl: '/images/framer.png',
-    alt: 'Framer Logo'
-  },
-  {
-    name: 'Figma',
-    imageUrl: '/images/figma.png',
-    alt: 'Figma Logo'
-  },
-  {
-    name: 'ReactJS',
-    imageUrl: '/images/react.png',
-    alt: 'ReactJS Logo'
-  },
-  {
-    name: 'Notion',
-    imageUrl: '/images/notion.png',
-    alt: 'Notion Logo'
-  },
-  {
-    name: 'Trello',
-    imageUrl: '/images/trello.png',
-    alt: 'Trello Logo'
-  },
-  {
-    name: 'NextJS',
-    imageUrl: '/images/nextjs.png',
-    alt: 'NextJS Logo'
-  },
-  {
-    name: 'Slack',
-    imageUrl: '/images/slack.png',
-    alt: 'Slack Logo'
-  },
-  {
-    name: 'Spotify',
-    imageUrl: '/images/spotify.png',
-    alt: 'Spotify Logo'
-  },
-  {
-    name: 'zoom',
-    imageUrl: '/images/zoom.png',
-    alt: 'Zoom Logo'
-  }
-];
+import { softwareTools } from '@/constants/index';
 
 function AboutSection() {
   return (
