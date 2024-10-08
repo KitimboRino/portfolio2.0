@@ -57,7 +57,7 @@ function HeroSection() {
         </section>
         <section className="max-w-[1081px] justify-end items-start self-start flex w-full flex-col mt-32 max-md:max-w-full max-md:mt-10 relative z-10">
           <h2 className="text-neutral-50 text-5xl font-light leading-[110%] tracking-tighter self-stretch max-md:max-w-full"> Front End Engineer Designing & developing UIs for web, mobile, applications and interactive apps </h2>
-          <p className="text-neutral-50 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full"> I design and develop experiences that <br /> make peoples lives simple. </p>
+          <p className="text-neutral-50 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full"> I design and develop dope experiences that <br /> make people&apos;s lives simple. </p>
         </section>
       </div>
       <div className="justify-end items-center bg-neutral-900 self-stretch relative flex grow flex-col pl-20 pr-20 pb-8 rounded-b-3xl max-md:max-w-full max-md:pt-24 max-md:px-5">
