@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { IoMailOutline } from 'react-icons/io5';
 
 // JSON data for contact links
@@ -64,10 +64,10 @@ function AboutHeroSection() {
               web, mobile applications and<br />
               interactive apps.
             </h2>
-            <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6">
+            <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full">
               Front End Engineer | UI/UX Designer <br /> at World Merit Org.
             </p>
-            <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full mt-6">
+            <p className="text-zinc-50 text-opacity-60 text-2xl font-light leading-[120%] self-stretch mt-2 max-md:max-w-full">
               World Merit Org, Dec 2022 - Present
             </p>
           </section>
